@@ -38,10 +38,7 @@
       --muted:#6B7785;
       --line:#DDD6CB;
       --soft:#E8EFED;
-
-      --shadow:
-        0 14px 38px rgba(23,54,93,.09);
-
+      --shadow:0 14px 38px rgba(23,54,93,.09);
       --radius:22px;
     }
 
@@ -80,33 +77,19 @@
       -webkit-tap-highlight-color:transparent;
     }
 
-    /* =========================
-       NAVIGATION
-    ========================= */
-
     .nav{
       position:sticky;
       top:0;
       z-index:100;
-
-      border-bottom:
-        1px solid rgba(221,214,203,.92);
-
-      background:
-        rgba(243,240,233,.94);
-
+      border-bottom:1px solid rgba(221,214,203,.92);
+      background:rgba(243,240,233,.94);
       backdrop-filter:blur(12px);
     }
 
     .nav-inner{
-      width:min(
-        1180px,
-        calc(100% - 40px)
-      );
-
+      width:min(1180px,calc(100% - 40px));
       margin:auto;
       padding:14px 0;
-
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -127,7 +110,6 @@
     .nav-links{
       display:flex;
       gap:22px;
-
       font-size:13px;
       color:var(--muted);
       font-weight:700;
@@ -137,26 +119,16 @@
       color:var(--navy);
     }
 
-    /* =========================
-       GLOBAL
-    ========================= */
-
     .wrap{
-      width:min(
-        1180px,
-        calc(100% - 40px)
-      );
-
+      width:min(1180px,calc(100% - 40px));
       margin:auto;
     }
 
     .kicker,
     .eyebrow{
       font-size:11px;
-
       color:var(--bronze);
       font-weight:800;
-
       text-transform:uppercase;
       letter-spacing:.14em;
     }
@@ -172,45 +144,24 @@
     h1,
     h2,
     h3{
-      font-family:
-        "Playfair Display",
-        serif;
-
+      font-family:"Playfair Display",serif;
       color:var(--navy);
     }
 
     h1{
-      font-size:
-        clamp(
-          46px,
-          6.5vw,
-          82px
-        );
-
+      font-size:clamp(46px,6.5vw,82px);
       line-height:1.01;
       letter-spacing:-.025em;
     }
 
     h2{
-      font-size:
-        clamp(
-          34px,
-          4.6vw,
-          52px
-        );
-
+      font-size:clamp(34px,4.6vw,52px);
       line-height:1.05;
       letter-spacing:-.02em;
     }
 
     h3{
-      font-size:
-        clamp(
-          28px,
-          3.2vw,
-          40px
-        );
-
+      font-size:clamp(28px,3.2vw,40px);
       line-height:1.08;
     }
 
@@ -223,25 +174,14 @@
       align-items:center;
       justify-content:center;
       gap:8px;
-
       min-height:44px;
-
-      padding:
-        11px
-        16px;
-
+      padding:11px 16px;
       border-radius:10px;
-
       background:var(--navy);
       color:white;
-
       font-size:13px;
       font-weight:800;
-
-      border:
-        1px solid
-        var(--navy);
-
+      border:1px solid var(--navy);
       transition:.2s ease;
     }
 
@@ -257,132 +197,76 @@
     }
 
     .btn:hover{
-      transform:
-        translateY(-1px);
-
-      box-shadow:
-        0 8px 18px
-        rgba(23,54,93,.12);
+      transform:translateY(-1px);
+      box-shadow:0 8px 18px rgba(23,54,93,.12);
     }
 
-    /* =========================
-       HERO
-    ========================= */
-
     .hero{
-      width:min(
-        1180px,
-        calc(100% - 40px)
-      );
-
+      width:min(1180px,calc(100% - 40px));
       margin:auto;
-
-      padding:
-        76px 0
-        64px;
-
+      padding:76px 0 64px;
       display:grid;
-
-      grid-template-columns:
-        1.12fr
-        .88fr;
-
+      grid-template-columns:1.12fr .88fr;
       gap:42px;
-
       align-items:center;
     }
 
     .hero-copy .line{
       width:90px;
       height:5px;
-
-      background:
-        var(--bronze);
-
+      background:var(--bronze);
       border-radius:8px;
-
-      margin:
-        22px 0;
+      margin:22px 0;
     }
 
     .hero-copy .sub{
       font-size:17px;
-
       max-width:700px;
-
       color:#526272;
     }
 
     .tags{
       display:flex;
-
       gap:7px;
-
       flex-wrap:wrap;
-
       margin-top:18px;
     }
 
     .tag{
-      padding:
-        6px 10px;
-
+      padding:6px 10px;
       border-radius:999px;
-
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       font-size:11px;
-
       color:var(--navy);
-
       font-weight:700;
     }
 
     .hero-actions{
       display:flex;
-
       gap:10px;
-
       flex-wrap:wrap;
-
       margin-top:24px;
     }
 
     .hero-card{
       background:var(--navy);
-
       border-radius:28px;
-
       padding:30px;
-
       color:#fff;
-
       min-height:430px;
-
       position:relative;
       overflow:hidden;
-
-      box-shadow:
-        var(--shadow);
+      box-shadow:var(--shadow);
     }
 
     .hero-card:after{
       content:"";
-
       position:absolute;
-
       width:360px;
       height:360px;
-
       border-radius:50%;
-
-      background:
-        rgba(255,255,255,.05);
-
+      background:rgba(255,255,255,.05);
       right:-120px;
       bottom:-120px;
     }
@@ -390,73 +274,47 @@
     .hero-card .label{
       font-size:10px;
       opacity:.7;
-
       letter-spacing:.15em;
-
       text-transform:uppercase;
     }
 
     .hero-card .big{
       font-size:28px;
       font-weight:800;
-
       line-height:1.22;
-
       margin-top:16px;
-
       max-width:390px;
-
       position:relative;
       z-index:1;
     }
 
     .mini-grid{
       display:grid;
-
-      grid-template-columns:
-        1fr
-        1fr;
-
+      grid-template-columns:1fr 1fr;
       gap:12px;
-
       margin-top:28px;
-
       position:relative;
       z-index:1;
     }
 
     .hero-mini{
-      border:
-        1px solid
-        rgba(255,255,255,.18);
-
+      border:1px solid rgba(255,255,255,.18);
       border-radius:15px;
-
       padding:16px;
-
-      background:
-        rgba(255,255,255,.035);
+      background:rgba(255,255,255,.035);
     }
 
     .hero-mini b{
       display:block;
-
       font-size:18px;
-
       margin-bottom:4px;
     }
 
     .hero-mini span{
       font-size:10px;
-
       opacity:.76;
-
       line-height:1.4;
     }
-
-    /* =========================
-       SECTIONS
-    ========================= */
 
     .section{
       padding:72px 0;
@@ -464,88 +322,54 @@
 
     .section-topline{
       display:flex;
-
       align-items:center;
       justify-content:space-between;
-
       margin-bottom:10px;
     }
 
     .section-brand{
       font-size:11px;
-
       font-weight:800;
-
       color:var(--navy);
-
       letter-spacing:.04em;
     }
 
     .section-no{
       font-size:10px;
-
       color:var(--muted);
     }
 
     .section-head{
       display:grid;
-
-      grid-template-columns:
-        1fr
-        .8fr;
-
+      grid-template-columns:1fr .8fr;
       gap:34px;
-
       align-items:end;
-
       margin-bottom:26px;
     }
 
     .section-head p{
       font-size:14px;
-
       max-width:620px;
     }
 
     .card{
       background:var(--paper);
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:18px;
-
       padding:20px;
-
-      box-shadow:
-        0 10px 28px
-        rgba(23,54,93,.05);
+      box-shadow:0 10px 28px rgba(23,54,93,.05);
     }
-
-    /* =========================
-       PROFILE
-    ========================= */
 
     .profile-grid{
       display:grid;
-
-      grid-template-columns:
-        .9fr
-        1.1fr;
-
+      grid-template-columns:.9fr 1.1fr;
       gap:20px;
     }
 
     .profile-box h3{
-      font-family:
-        "Manrope",
-        sans-serif;
-
+      font-family:"Manrope",sans-serif;
       font-size:17px;
-
       color:var(--navy);
-
       margin-bottom:10px;
     }
 
@@ -555,34 +379,20 @@
 
     .mini-flow{
       display:flex;
-
       gap:7px;
-
       align-items:center;
-
       flex-wrap:wrap;
-
       margin-top:18px;
     }
 
     .mini-flow span{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
-      padding:
-        7px 10px;
-
+      border:1px solid var(--line);
+      padding:7px 10px;
       border-radius:10px;
-
       font-size:10px;
-
       color:var(--navy);
-
       font-weight:700;
-
       display:inline-flex;
       align-items:center;
       gap:6px;
@@ -590,62 +400,42 @@
 
     .mini-flow i{
       font-style:normal;
-
       color:var(--bronze);
-
       font-weight:800;
     }
 
     .mini-ico{
       width:18px;
       height:18px;
-
       display:inline-grid;
       place-items:center;
-
       border-radius:50%;
-
       background:#F4ECE3;
-
       color:var(--bronze);
-
       font-size:10px;
     }
 
     .tool-grid{
       display:grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
+      grid-template-columns:repeat(3,1fr);
       gap:10px;
     }
 
     .tool{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:15px;
-
       padding:15px;
     }
 
     .tool-icon{
       width:42px;
       height:42px;
-
       border-radius:50%;
-
       display:grid;
       place-items:center;
-
       margin-bottom:10px;
-
       font-size:20px;
-
       background:#F4ECE3;
       color:var(--bronze);
     }
@@ -682,183 +472,115 @@
 
     .tool b{
       display:block;
-
       color:var(--navy);
-
       font-size:13px;
-
       margin-bottom:4px;
     }
 
     .tool span{
       font-size:10.5px;
-
       color:var(--muted);
-
       line-height:1.4;
     }
 
     .value-grid{
       display:grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
+      grid-template-columns:repeat(3,1fr);
       gap:12px;
-
       margin-top:18px;
     }
 
     .value-card{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:16px;
-
       padding:17px;
     }
 
     .value-card .icon{
       width:42px;
       height:42px;
-
       border-radius:50%;
-
       background:#F4ECE3;
-
       color:var(--bronze);
-
       display:grid;
       place-items:center;
-
       font-size:18px;
-
       margin-bottom:10px;
     }
 
     .value-card .label{
       color:var(--bronze);
-
       font-size:9px;
-
       font-weight:800;
-
       text-transform:uppercase;
-
       letter-spacing:.12em;
     }
 
     .value-card h4{
       color:var(--navy);
-
       font-size:17px;
-
       margin-top:4px;
     }
 
     .value-card p{
       font-size:11px;
-
       margin-top:6px;
     }
 
     .value-card .micro{
       margin-top:12px;
-
       padding-top:10px;
-
-      border-top:
-        1px solid
-        var(--line);
-
+      border-top:1px solid var(--line);
       font-size:9px;
-
       color:var(--muted);
-
       font-weight:700;
     }
 
-    /* =========================
-       POWER BI
-    ========================= */
-
     .powerbi-grid{
       display:grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
+      grid-template-columns:repeat(3,1fr);
       gap:16px;
-
       margin-top:24px;
     }
 
     .powerbi-card{
       background:var(--paper);
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:18px;
-
       padding:14px;
-
-      box-shadow:
-        var(--shadow);
-
+      box-shadow:var(--shadow);
       display:flex;
       flex-direction:column;
-
       gap:12px;
     }
 
     .powerbi-card img{
       width:100%;
-
       aspect-ratio:16/10;
-
       object-fit:contain;
-
       background:#fff;
-
       border-radius:13px;
-
-      border:
-        1px solid
-        #eee8df;
+      border:1px solid #eee8df;
     }
 
     .powerbi-card h4{
       color:var(--navy);
-
       font-size:16px;
     }
 
     .powerbi-card p{
       font-size:11px;
-
       line-height:1.55;
     }
 
     .powerbi-card .question{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:12px;
-
       padding:10px 11px;
-
       font-size:10px;
-
       color:var(--ink);
-
       line-height:1.5;
     }
 
@@ -868,245 +590,139 @@
 
     .powerbi-skills{
       display:flex;
-
       flex-wrap:wrap;
-
       gap:6px;
-
       margin-top:auto;
     }
 
     .powerbi-skills span{
-      padding:
-        5px 8px;
-
+      padding:5px 8px;
       border-radius:999px;
-
       background:var(--soft);
-
       color:var(--navy);
-
       font-size:9px;
-
       font-weight:700;
     }
 
     .powerbi-note{
       margin-top:18px;
-
       font-size:10px;
-
       color:var(--muted);
     }
 
-    /* =========================
-       PROJECTS
-    ========================= */
-
     .project{
       padding:72px 0;
-
-      border-top:
-        1px solid
-        var(--line);
+      border-top:1px solid var(--line);
     }
 
     .project-head{
       display:grid;
-
-      grid-template-columns:
-        1.2fr
-        .8fr;
-
+      grid-template-columns:1.2fr .8fr;
       gap:22px;
-
       align-items:start;
     }
 
     .project-title p{
       font-size:13px;
-
       margin-top:10px;
-
       max-width:730px;
     }
 
     .metrics{
       display:grid;
-
-      grid-template-columns:
-        1fr
-        1fr;
-
+      grid-template-columns:1fr 1fr;
       gap:10px;
     }
 
     .metric{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:14px;
-
       padding:14px;
     }
 
     .metric strong{
       display:block;
-
       color:var(--navy);
-
       font-size:19px;
-
       line-height:1.1;
     }
 
     .metric span{
       display:block;
-
       font-size:9.5px;
-
       color:var(--muted);
-
       line-height:1.35;
-
       margin-top:4px;
     }
 
-    /* =========================
-       DASHBOARD
-    ========================= */
-
     .dashboard-box{
       margin-top:20px;
-
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:20px;
-
       padding:14px;
-
-      box-shadow:
-        var(--shadow);
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     .dashboard-head{
       display:flex;
-
       align-items:center;
       justify-content:space-between;
-
       gap:16px;
-
       margin-bottom:12px;
     }
 
     .dashboard-head h4{
       font-size:16px;
-
       color:var(--navy);
-
       margin-top:3px;
     }
 
     .dashboard-head p{
       font-size:11px;
-
       margin-top:4px;
     }
 
     .live-frame{
       width:100%;
-
       height:700px;
-
       border:0;
-
       border-radius:14px;
-
       background:#eef2f5;
-
       display:block;
-    }
-
-    .mobile-dashboard{
-      display:none;
-    }
-
-    .mobile-dashboard img{
-      width:100%;
-
-      border-radius:13px;
-
-      background:#eef2f5;
-
-      aspect-ratio:16/9;
-
-      object-fit:contain;
-    }
-
-    .mobile-dashboard .actions{
-      display:flex;
-
-      gap:8px;
-
-      flex-wrap:wrap;
-
-      margin-top:12px;
     }
 
     .excel-grid{
       display:grid;
-
-      grid-template-columns:
-        1.25fr
-        .75fr;
-
+      grid-template-columns:1.25fr .75fr;
       gap:20px;
-
       margin-top:18px;
-
       align-items:stretch;
     }
 
     .excel-shot{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:18px;
-
       padding:12px;
-
-      box-shadow:
-        var(--shadow);
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
-    .excel-shot img{
+    .excel-live iframe{
       width:100%;
-
-      height:100%;
-
-      max-height:520px;
-
-      object-fit:contain;
-
+      height:620px;
+      border:0;
       border-radius:12px;
+      display:block;
+      background:#fff;
     }
 
     .excel-side{
       display:flex;
-
       flex-direction:column;
-
       gap:10px;
     }
 
@@ -1116,469 +732,298 @@
 
     .excel-side h4{
       font-size:22px;
-
       color:var(--navy);
-
-      font-family:
-        "Playfair Display",
-        serif;
+      font-family:"Playfair Display",serif;
     }
 
     .excel-side p{
       font-size:12px;
-
       margin-top:7px;
     }
 
     .excel-side .btn{
       margin-top:auto;
-
       align-self:flex-start;
     }
 
-    /* =========================
-       HEALTH
-    ========================= */
-
     .health-flow{
       display:grid;
-
-      grid-template-columns:
-        repeat(4,1fr);
-
+      grid-template-columns:repeat(4,1fr);
       gap:9px;
-
       margin-top:18px;
     }
 
     .hstep{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:14px;
-
       padding:13px;
     }
 
     .hstep b{
       display:block;
-
       color:var(--navy);
-
       font-size:11px;
-
       margin-bottom:5px;
     }
 
     .hstep span{
       font-size:9.5px;
-
       color:var(--muted);
-
       line-height:1.4;
     }
 
     .health-grid{
       display:grid;
-
-      grid-template-columns:
-        .82fr
-        1.18fr;
-
+      grid-template-columns:.82fr 1.18fr;
       gap:14px;
-
       margin-top:14px;
     }
 
     .hcard{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:18px;
-
       padding:18px;
     }
 
     .hcard h4{
       font-size:17px;
-
       color:var(--navy);
-
       margin-top:3px;
     }
 
     .hcard p{
       font-size:11px;
-
       margin-top:6px;
     }
 
     .cost-bars{
       display:flex;
-
       gap:20px;
-
       align-items:flex-end;
-
       justify-content:center;
-
       margin-top:22px;
     }
 
     .cost{
       width:145px;
-
       text-align:center;
     }
 
     .bar{
       width:55px;
-
-      margin:
-        0 auto
-        8px;
-
-      border-radius:
-        11px 11px
-        3px 3px;
+      margin:0 auto 8px;
+      border-radius:11px 11px 3px 3px;
     }
 
     .bar.low{
       height:48px;
-
       background:#C8D3D0;
     }
 
     .bar.high{
       height:125px;
-
       background:var(--sage);
     }
 
     .cost strong{
       font-size:16px;
-
       color:var(--navy);
     }
 
     .cost span{
       display:block;
-
       font-size:9px;
-
       color:var(--muted);
-
       margin-top:3px;
     }
 
     .health-chart-img{
       width:100%;
-
       height:230px;
-
       object-fit:contain;
-
       margin-top:12px;
-
       background:#fff;
-
       border-radius:10px;
     }
 
     .big87{
       font-size:38px;
-
       color:var(--bronze);
-
       font-weight:800;
-
       line-height:1;
-
       margin-top:6px;
     }
 
     .health-bottom{
       display:grid;
-
-      grid-template-columns:
-        1fr
-        1fr;
-
+      grid-template-columns:1fr 1fr;
       gap:14px;
-
       margin-top:14px;
     }
 
     .dept{
       margin-top:15px;
-
       display:grid;
-
       gap:10px;
     }
 
     .drow{
       display:grid;
-
-      grid-template-columns:
-        120px
-        1fr;
-
+      grid-template-columns:120px 1fr;
       gap:9px;
-
       align-items:center;
     }
 
     .drow span{
       font-size:10px;
-
       color:var(--muted);
     }
 
     .track{
       height:10px;
-
       background:#E8E3DA;
-
       border-radius:99px;
-
       overflow:hidden;
     }
 
     .fill{
       height:100%;
-
-      background:
-        linear-gradient(
-          90deg,
-          var(--bronze),
-          #D2A57E
-        );
+      background:linear-gradient(90deg,var(--bronze),#D2A57E);
     }
 
     .impact-mini-grid{
       display:grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
+      grid-template-columns:repeat(3,1fr);
       gap:10px;
-
       margin-top:16px;
     }
 
     .impact-mini{
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       background:var(--paper);
-
       border-radius:13px;
-
       padding:13px;
     }
 
     .impact-mini b{
       display:block;
-
       color:var(--navy);
-
       font-size:11px;
-
       margin-bottom:4px;
     }
 
     .impact-mini span{
       font-size:9.5px;
-
       color:var(--muted);
-
       line-height:1.4;
     }
 
     .health-callout{
       margin-top:14px;
-
       padding:14px;
-
-      border:
-        1px solid
-        #BFD7D0;
-
+      border:1px solid #BFD7D0;
       background:#EEF6F3;
-
       border-radius:13px;
-
       color:var(--sage);
-
       font-size:12px;
-
       font-weight:800;
     }
 
     .insight-list{
       display:grid;
-
       gap:10px;
-
       margin-top:14px;
     }
 
     .insight{
       background:var(--paper);
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:13px;
-
       padding:13px;
     }
 
     .insight b{
       display:block;
-
       color:var(--navy);
-
       font-size:11px;
     }
 
     .insight span{
       font-size:9.5px;
-
       color:var(--muted);
     }
 
-    /* =========================
-       AUTOMATION
-    ========================= */
-
     .auto-flow{
       display:grid;
-
-      grid-template-columns:
-        repeat(5,1fr);
-
+      grid-template-columns:repeat(5,1fr);
       gap:9px;
-
       margin-top:18px;
     }
 
     .astep{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:14px;
-
       padding:13px;
     }
 
     .astep b{
       display:block;
-
       color:var(--navy);
-
       font-size:11px;
-
       margin-bottom:5px;
     }
 
     .astep span{
       font-size:9.5px;
-
       color:var(--muted);
-
       line-height:1.4;
     }
 
     .automation-visual{
       display:grid;
-
-      grid-template-columns:
-        .72fr
-        1.28fr;
-
+      grid-template-columns:.72fr 1.28fr;
       gap:14px;
-
       margin-top:14px;
     }
 
     .logic-card{
       background:#fff;
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:18px;
-
       padding:18px;
     }
 
     .logic-card code{
       display:block;
-
       margin-top:14px;
-
       background:var(--paper);
-
-      border:
-        1px solid
-        var(--line);
-
+      border:1px solid var(--line);
       border-radius:13px;
-
       padding:15px;
-
       font-size:11px;
-
       color:var(--navy);
-
       line-height:1.8;
-
       overflow-wrap:anywhere;
     }
 
     .snippet-shell{
       border-radius:18px;
-
       background:#112631;
-
       padding:20px;
-
       overflow:auto;
-
-      box-shadow:
-        var(--shadow);
+      box-shadow:var(--shadow);
     }
 
     .snippet-shell pre{
       margin:0;
-
       color:#E8F0F2;
-
-      font-family:
-        "SFMono-Regular",
-        Consolas,
-        monospace;
-
+      font-family:"SFMono-Regular",Consolas,monospace;
       font-size:12px;
-
       line-height:1.7;
-
       white-space:pre-wrap;
-
       word-break:break-word;
     }
 
@@ -1590,18 +1035,10 @@
       color:#83C4B7;
     }
 
-    /* =========================
-       CONTACT
-    ========================= */
-
     .contact-section{
       background:var(--navy);
-
       color:white;
-
-      padding:
-        72px 0
-        44px;
+      padding:72px 0 44px;
     }
 
     .contact-section h2{
@@ -1610,69 +1047,44 @@
 
     .contact-section p{
       color:#C8D5E0;
-
       margin-top:10px;
-
       max-width:650px;
     }
 
     .contact-links{
       display:grid;
-
-      grid-template-columns:
-        repeat(4,1fr);
-
+      grid-template-columns:repeat(4,1fr);
       gap:10px;
-
       margin-top:26px;
     }
 
     .contact-link{
-      border:
-        1px solid
-        rgba(255,255,255,.16);
-
+      border:1px solid rgba(255,255,255,.16);
       border-radius:15px;
-
       padding:15px;
-
-      background:
-        rgba(255,255,255,.035);
+      background:rgba(255,255,255,.035);
     }
 
     .contact-link b{
       display:block;
-
       font-size:12px;
-
       color:white;
     }
 
     .contact-link span{
       display:block;
-
       font-size:9.5px;
-
       color:#C8D5E0;
-
       margin-top:5px;
-
       line-height:1.4;
-
       overflow-wrap:anywhere;
     }
 
     .footer-note{
       margin-top:28px;
-
       padding-top:18px;
-
-      border-top:
-        1px solid
-        rgba(255,255,255,.13);
-
+      border-top:1px solid rgba(255,255,255,.13);
       color:#C8D5E0;
-
       font-size:10px;
     }
 
@@ -1681,19 +1093,12 @@
       font-weight:700;
     }
 
-    /* =========================
-       TABLET
-    ========================= */
-
     @media(max-width:900px){
 
       .nav-inner,
       .wrap,
       .hero{
-        width:min(
-          100% - 28px,
-          1180px
-        );
+        width:min(100% - 28px,1180px);
       }
 
       .nav-links{
@@ -1702,11 +1107,7 @@
 
       .hero{
         grid-template-columns:1fr;
-
-        padding:
-          46px 0
-          42px;
-
+        padding:46px 0 42px;
         gap:22px;
       }
 
@@ -1715,13 +1116,11 @@
       }
 
       .section{
-        padding:
-          52px 0;
+        padding:52px 0;
       }
 
       .project{
-        padding:
-          54px 0;
+        padding:54px 0;
       }
 
       .section-head,
@@ -1735,8 +1134,7 @@
       }
 
       .tool-grid{
-        grid-template-columns:
-          repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
       }
 
       .value-grid{
@@ -1752,8 +1150,7 @@
       }
 
       .health-flow{
-        grid-template-columns:
-          repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
       }
 
       .impact-mini-grid{
@@ -1761,23 +1158,21 @@
       }
 
       .auto-flow{
-        grid-template-columns:
-          repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
       }
 
       .contact-links{
-        grid-template-columns:
-          repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
       }
 
       .live-frame{
-        height:590px;
+        height:620px;
+      }
+
+      .excel-live iframe{
+        height:560px;
       }
     }
-
-    /* =========================
-       MOBILE
-    ========================= */
 
     @media(max-width:640px){
 
@@ -1792,8 +1187,7 @@
       }
 
       .nav-inner{
-        padding:
-          11px 0;
+        padding:11px 0;
       }
 
       .brand{
@@ -1801,40 +1195,25 @@
       }
 
       .hero{
-        padding:
-          34px 0
-          36px;
+        padding:34px 0 36px;
       }
 
       h1{
-        font-size:
-          clamp(
-            40px,
-            13vw,
-            58px
-          );
+        font-size:clamp(40px,13vw,58px);
       }
 
       h2{
-        font-size:
-          clamp(
-            29px,
-            9.5vw,
-            40px
-          );
+        font-size:clamp(29px,9.5vw,40px);
       }
 
       .hero-copy .sub{
         font-size:14px;
-
         line-height:1.65;
       }
 
       .hero-actions{
         display:grid;
-
         grid-template-columns:1fr;
-
         width:100%;
       }
 
@@ -1844,7 +1223,6 @@
 
       .hero-card{
         padding:21px;
-
         border-radius:20px;
       }
 
@@ -1858,8 +1236,7 @@
 
       .section,
       .project{
-        padding:
-          44px 0;
+        padding:44px 0;
       }
 
       .section-head{
@@ -1889,10 +1266,7 @@
       }
 
       .metrics{
-        grid-template-columns:
-          1fr
-          1fr;
-
+        grid-template-columns:1fr 1fr;
         gap:8px;
       }
 
@@ -1909,15 +1283,9 @@
       }
 
       .live-frame{
-        display:none;
-      }
-
-      .mobile-dashboard{
         display:block;
-      }
-
-      .dashboard-box{
-        padding:11px;
+        height:560px;
+        border-radius:12px;
       }
 
       .dashboard-head{
@@ -1935,6 +1303,10 @@
 
       .excel-shot{
         padding:8px;
+      }
+
+      .excel-live iframe{
+        height:520px;
       }
 
       .excel-side .btn{
@@ -1975,9 +1347,7 @@
       }
 
       .drow{
-        grid-template-columns:
-          105px
-          1fr;
+        grid-template-columns:105px 1fr;
       }
 
       .auto-flow{
@@ -2002,9 +1372,7 @@
       }
 
       .contact-section{
-        padding:
-          52px 0
-          34px;
+        padding:52px 0 34px;
       }
 
       .contact-link{
@@ -2017,9 +1385,7 @@
 
       .tag{
         font-size:9.5px;
-
-        padding:
-          5px 8px;
+        padding:5px 8px;
       }
 
       .powerbi-card{
@@ -2064,7 +1430,6 @@
 
 <body>
 
-  <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
 
@@ -2082,8 +1447,6 @@
     </div>
   </nav>
 
-
-  <!-- HERO -->
   <header class="hero" id="top">
 
     <div class="hero-copy">
@@ -2115,10 +1478,7 @@
 
       <div class="hero-actions">
 
-        <a
-          class="btn"
-          href="#powerbi"
-        >
+        <a class="btn" href="#powerbi">
           Explore Projects ↓
         </a>
 
@@ -2134,7 +1494,6 @@
       </div>
 
     </div>
-
 
     <div class="hero-card">
 
@@ -2187,17 +1546,11 @@
 
   </header>
 
-
-  <!-- ABOUT -->
-  <section
-    class="section"
-    id="about"
-  >
+  <section class="section" id="about">
 
     <div class="wrap">
 
       <div class="section-topline">
-
         <span class="section-brand">
           RAZAN ALTOWAIRQI
         </span>
@@ -2205,9 +1558,7 @@
         <span class="section-no">
           01
         </span>
-
       </div>
-
 
       <div class="section-head">
 
@@ -2223,7 +1574,6 @@
         </p>
 
       </div>
-
 
       <div class="profile-grid">
 
@@ -2245,7 +1595,6 @@
             and turning repetitive reporting steps into reusable
             Python workflows.
           </p>
-
 
           <div class="mini-flow">
 
@@ -2287,102 +1636,71 @@
 
         </div>
 
-
         <div class="tool-grid">
 
           <div class="tool">
-
             <div class="tool-icon python">
               <i class="fa-brands fa-python"></i>
             </div>
-
             <b>Python</b>
-
             <span>
               Pandas · OpenPyXL · python-pptx · automation logic
             </span>
-
           </div>
 
-
           <div class="tool">
-
             <div class="tool-icon excel">
               <i class="fa-solid fa-file-excel"></i>
             </div>
-
             <b>Excel</b>
-
             <span>
               Dashboards · validation · timelines · regional reporting
             </span>
-
           </div>
 
-
           <div class="tool">
-
             <div class="tool-icon html">
               <i class="fa-solid fa-code"></i>
             </div>
-
             <b>HTML / JS</b>
-
             <span>
               Interactive dashboards and portfolio experiences
             </span>
-
           </div>
 
-
           <div class="tool">
-
             <div class="tool-icon analysis">
               <i class="fa-solid fa-database"></i>
             </div>
-
             <b>Data Analysis</b>
-
             <span>
               Cleaning · trends · KPI logic · scenario analysis
             </span>
-
           </div>
 
-
           <div class="tool">
-
             <div class="tool-icon powerbi">
               <i class="fa-solid fa-chart-simple"></i>
             </div>
-
             <b>Power BI</b>
-
             <span>
               Visual analysis and reporting
             </span>
-
           </div>
 
-
           <div class="tool">
-
             <div class="tool-icon pmo">
               <i class="fa-solid fa-gears"></i>
             </div>
-
             <b>PMO Analytics</b>
-
             <span>
               Tracking · progress · governance · executive reporting
             </span>
-
           </div>
 
         </div>
 
       </div>
-
 
       <div class="value-grid">
 
@@ -2412,7 +1730,6 @@
 
         </div>
 
-
         <div class="value-card">
 
           <div class="icon">
@@ -2438,7 +1755,6 @@
           </div>
 
         </div>
-
 
         <div class="value-card">
 
@@ -2472,12 +1788,7 @@
 
   </section>
 
-
-  <!-- PROJECT 01 · POWER BI -->
-  <section
-    class="project"
-    id="powerbi"
-  >
+  <section class="project" id="powerbi">
 
     <div class="wrap">
 
@@ -2493,7 +1804,6 @@
 
       </div>
 
-
       <div class="section-head">
 
         <h2>
@@ -2508,9 +1818,7 @@
 
       </div>
 
-
       <div class="powerbi-grid">
-
 
         <article class="powerbi-card">
 
@@ -2520,7 +1828,6 @@
           >
 
           <div>
-
             <div class="kicker">
               Regional & Quarterly Analysis
             </div>
@@ -2528,7 +1835,6 @@
             <h4>
               Saudi Establishments 2023
             </h4>
-
           </div>
 
           <p>
@@ -2537,12 +1843,9 @@
           </p>
 
           <div class="question">
-
             <b>Business question:</b>
-
             How are establishments distributed geographically,
             and how does activity change across reporting periods?
-
           </div>
 
           <div class="powerbi-skills">
@@ -2554,7 +1857,6 @@
 
         </article>
 
-
         <article class="powerbi-card">
 
           <img
@@ -2563,7 +1865,6 @@
           >
 
           <div>
-
             <div class="kicker">
               Geographic Analysis
             </div>
@@ -2571,7 +1872,6 @@
             <h4>
               Saudi Real Estate Analysis
             </h4>
-
           </div>
 
           <p>
@@ -2581,12 +1881,9 @@
           </p>
 
           <div class="question">
-
             <b>Business question:</b>
-
             Where are property listings concentrated,
             and how do average prices vary across cities and districts?
-
           </div>
 
           <div class="powerbi-skills">
@@ -2598,7 +1895,6 @@
 
         </article>
 
-
         <article class="powerbi-card">
 
           <img
@@ -2607,7 +1903,6 @@
           >
 
           <div>
-
             <div class="kicker">
               Project Performance
             </div>
@@ -2615,7 +1910,6 @@
             <h4>
               Renewable Energy Projects
             </h4>
-
           </div>
 
           <p>
@@ -2625,13 +1919,10 @@
           </p>
 
           <div class="question">
-
             <b>Business question:</b>
-
             How do project capacity, energy mix,
             progress indicators, and investment compare
             across renewable projects?
-
           </div>
 
           <div class="powerbi-skills">
@@ -2645,7 +1936,6 @@
 
       </div>
 
-
       <p class="powerbi-note">
         Practice and portfolio dashboards created to demonstrate
         Power BI reporting and visualization capabilities.
@@ -2656,12 +1946,7 @@
 
   </section>
 
-
-  <!-- PROJECT 02 · INTERACTIVE REPORTING -->
-  <section
-    class="project"
-    id="dashboard"
-  >
+  <section class="project" id="dashboard">
 
     <div class="wrap">
 
@@ -2676,7 +1961,6 @@
         </span>
 
       </div>
-
 
       <div class="project-head">
 
@@ -2701,18 +1985,15 @@
           </p>
 
           <div class="tags">
-
             <span class="tag">Python</span>
             <span class="tag">Pandas</span>
             <span class="tag">HTML</span>
             <span class="tag">JavaScript</span>
             <span class="tag">Excel</span>
             <span class="tag">Data Cleaning</span>
-
           </div>
 
         </div>
-
 
         <div class="metrics">
 
@@ -2751,7 +2032,7 @@
 
       </div>
 
-
+      <!-- LIVE DASHBOARD -->
       <div class="dashboard-box">
 
         <div class="dashboard-head">
@@ -2773,7 +2054,6 @@
 
           </div>
 
-
           <a
             class="btn"
             href="https://razanmtw17.github.io/razan-data-portfolio/dashboard/index.html"
@@ -2785,51 +2065,29 @@
 
         </div>
 
-
         <iframe
           class="live-frame"
-          src="dashboard/index.html"
+          src="https://razanmtw17.github.io/razan-data-portfolio/dashboard/index.html"
           title="Interactive Project Outputs Dashboard"
           loading="lazy"
+          allowfullscreen
         ></iframe>
-
-
-        <div class="mobile-dashboard">
-
-          <img
-            src="assets/dashboard_preview.png"
-            alt="Interactive dashboard preview"
-          >
-
-          <div class="actions">
-
-            <a
-              class="btn"
-              href="https://razanmtw17.github.io/razan-data-portfolio/dashboard/index.html"
-              target="_blank"
-              rel="noopener"
-            >
-              View Interactive Dashboard ↗
-            </a>
-
-          </div>
-
-        </div>
 
       </div>
 
-
+      <!-- INTERACTIVE EXCEL -->
       <div class="excel-grid">
 
-        <div class="excel-shot">
+        <div class="excel-shot excel-live">
 
-          <img
-            src="assets/excel_dashboard_preview.png.png"
-            alt="Excel dashboard preview"
-          >
+          <iframe
+            src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Frazanmtw17.github.io%2Frazan-data-portfolio%2Fassets%2Fsynthetic_regional_dashboard.xlsx"
+            title="Interactive Excel Dashboard"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
 
         </div>
-
 
         <div class="excel-side">
 
@@ -2844,14 +2102,13 @@
             </h4>
 
             <p>
-              The same synthetic dataset is also available through
-              an Excel-based reporting dashboard with KPI summaries,
-              track and monthly views, timeline analysis, master data,
-              and regional drill-down sheets.
+              Explore the workbook directly in the browser,
+              switch between sheets, review KPI summaries,
+              track and monthly views, timeline analysis,
+              master data, and regional drill-down sheets.
             </p>
 
           </div>
-
 
           <a
             class="btn secondary"
@@ -2869,12 +2126,7 @@
 
   </section>
 
-
-  <!-- PROJECT 03 · HEALTHCARE -->
-  <section
-    class="project"
-    id="healthcare"
-  >
+  <section class="project" id="healthcare">
 
     <div class="wrap">
 
@@ -2889,7 +2141,6 @@
         </span>
 
       </div>
-
 
       <div class="project-head">
 
@@ -2914,31 +2165,14 @@
           </p>
 
           <div class="tags">
-
-            <span class="tag">
-              Saudi MoH Open Data
-            </span>
-
-            <span class="tag">
-              Scientific Literature
-            </span>
-
-            <span class="tag">
-              Python
-            </span>
-
-            <span class="tag">
-              CAGR Projection
-            </span>
-
-            <span class="tag">
-              Economic Analysis
-            </span>
-
+            <span class="tag">Saudi MoH Open Data</span>
+            <span class="tag">Scientific Literature</span>
+            <span class="tag">Python</span>
+            <span class="tag">CAGR Projection</span>
+            <span class="tag">Economic Analysis</span>
           </div>
 
         </div>
-
 
         <div class="metrics">
 
@@ -2978,7 +2212,6 @@
 
       </div>
 
-
       <div class="health-flow">
 
         <div class="hstep">
@@ -2993,7 +2226,6 @@
           </span>
         </div>
 
-
         <div class="hstep">
           <b>
             02 · Earlier Detection
@@ -3004,7 +2236,6 @@
             before costly complications develop.
           </span>
         </div>
-
 
         <div class="hstep">
           <b>
@@ -3017,7 +2248,6 @@
             hospital departments.
           </span>
         </div>
-
 
         <div class="hstep">
           <b>
@@ -3032,7 +2262,6 @@
         </div>
 
       </div>
-
 
       <div class="health-grid">
 
@@ -3053,42 +2282,23 @@
             reducing diabetes-related complications.
           </p>
 
-
           <div class="cost-bars">
 
             <div class="cost">
-
               <div class="bar low"></div>
-
-              <strong>
-                ~SAR 0.15B
-              </strong>
-
-              <span>
-                Estimated screening cost
-              </span>
-
+              <strong>~SAR 0.15B</strong>
+              <span>Estimated screening cost</span>
             </div>
 
-
             <div class="cost">
-
               <div class="bar high"></div>
-
-              <strong>
-                ~SAR 1.17B
-              </strong>
-
-              <span>
-                Potential treatment savings
-              </span>
-
+              <strong>~SAR 1.17B</strong>
+              <span>Potential treatment savings</span>
             </div>
 
           </div>
 
         </div>
-
 
         <div class="hcard">
 
@@ -3120,7 +2330,6 @@
 
       </div>
 
-
       <div class="health-bottom">
 
         <div class="hcard">
@@ -3140,77 +2349,42 @@
             several clinical services.
           </p>
 
-
           <div class="dept">
 
             <div class="drow">
-              <span>
-                Cardiology
-              </span>
-
+              <span>Cardiology</span>
               <div class="track">
-                <div
-                  class="fill"
-                  style="width:86%"
-                ></div>
+                <div class="fill" style="width:86%"></div>
               </div>
             </div>
 
-
             <div class="drow">
-              <span>
-                Nephrology
-              </span>
-
+              <span>Nephrology</span>
               <div class="track">
-                <div
-                  class="fill"
-                  style="width:72%"
-                ></div>
+                <div class="fill" style="width:72%"></div>
               </div>
             </div>
 
-
             <div class="drow">
-              <span>
-                Ophthalmology
-              </span>
-
+              <span>Ophthalmology</span>
               <div class="track">
-                <div
-                  class="fill"
-                  style="width:58%"
-                ></div>
+                <div class="fill" style="width:58%"></div>
               </div>
             </div>
 
-
             <div class="drow">
-              <span>
-                Vascular / Foot Care
-              </span>
-
+              <span>Vascular / Foot Care</span>
               <div class="track">
-                <div
-                  class="fill"
-                  style="width:48%"
-                ></div>
+                <div class="fill" style="width:48%"></div>
               </div>
             </div>
 
           </div>
 
-
-          <p
-            style="
-              font-size:9px;
-              margin-top:12px;
-            "
-          >
+          <p style="font-size:9px;margin-top:12px">
             Bar lengths are illustrative storytelling only;
             no department-specific percentages are claimed.
           </p>
-
 
           <div class="impact-mini-grid">
 
@@ -3225,7 +2399,6 @@
               </span>
             </div>
 
-
             <div class="impact-mini">
               <b>
                 System-wide cost benefits
@@ -3236,7 +2409,6 @@
                 not just one service line.
               </span>
             </div>
-
 
             <div class="impact-mini">
               <b>
@@ -3251,13 +2423,11 @@
 
           </div>
 
-
           <div class="health-callout">
             Prevention → fewer complications → lower downstream cost
           </div>
 
         </div>
-
 
         <div class="hcard">
 
@@ -3268,7 +2438,6 @@
           <h4>
             How the analysis was built
           </h4>
-
 
           <div class="insight-list">
 
@@ -3285,7 +2454,6 @@
 
             </div>
 
-
             <div class="insight">
 
               <b>
@@ -3299,7 +2467,6 @@
               </span>
 
             </div>
-
 
             <div class="insight">
 
@@ -3326,12 +2493,7 @@
 
   </section>
 
-
-  <!-- PROJECT 04 · AUTOMATION -->
-  <section
-    class="project"
-    id="automation"
-  >
+  <section class="project" id="automation">
 
     <div class="wrap">
 
@@ -3346,7 +2508,6 @@
         </span>
 
       </div>
-
 
       <div class="project-head">
 
@@ -3370,77 +2531,44 @@
             reports from a predefined template.
           </p>
 
-
           <div class="tags">
-
-            <span class="tag">
-              Python
-            </span>
-
-            <span class="tag">
-              Pandas
-            </span>
-
-            <span class="tag">
-              python-pptx
-            </span>
-
-            <span class="tag">
-              Excel
-            </span>
-
-            <span class="tag">
-              PowerPoint Automation
-            </span>
-
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">python-pptx</span>
+            <span class="tag">Excel</span>
+            <span class="tag">PowerPoint Automation</span>
           </div>
 
         </div>
 
-
         <div class="metrics">
 
           <div class="metric">
-            <strong>
-              Dynamic
-            </strong>
-
+            <strong>Dynamic</strong>
             <span>
               Slide splitting based
               on content length
             </span>
           </div>
 
-
           <div class="metric">
-            <strong>
-              Auto
-            </strong>
-
+            <strong>Auto</strong>
             <span>
               Formatting copied
               from template
             </span>
           </div>
 
-
           <div class="metric">
-            <strong>
-              Clean
-            </strong>
-
+            <strong>Clean</strong>
             <span>
               Reviewer notes consolidated
               automatically
             </span>
           </div>
 
-
           <div class="metric">
-            <strong>
-              Repeatable
-            </strong>
-
+            <strong>Repeatable</strong>
             <span>
               Standardized reporting
               workflow
@@ -3451,62 +2579,52 @@
 
       </div>
 
-
       <div class="auto-flow">
 
         <div class="astep">
           <b>
             01 · Excel Input
           </b>
-
           <span>
             Output names, statuses,
             and reviewer columns.
           </span>
         </div>
 
-
         <div class="astep">
           <b>
             02 · Clean & Normalize
           </b>
-
           <span>
             Status values and text
             standardized before processing.
           </span>
         </div>
 
-
         <div class="astep">
           <b>
             03 · Consolidate Notes
           </b>
-
           <span>
             Meaningful reviewer comments
             combined per output.
           </span>
         </div>
 
-
         <div class="astep">
           <b>
             04 · Layout Logic
           </b>
-
           <span>
             Text length determines record
             distribution across slides.
           </span>
         </div>
 
-
         <div class="astep">
           <b>
             05 · PPT Output
           </b>
-
           <span>
             Formatted presentation files
             generated automatically.
@@ -3514,7 +2632,6 @@
         </div>
 
       </div>
-
 
       <div class="automation-visual">
 
@@ -3535,7 +2652,6 @@
           </code>
 
         </div>
-
 
         <div class="snippet-shell">
 
@@ -3562,12 +2678,7 @@
 
   </section>
 
-
-  <!-- CONTACT -->
-  <section
-    class="contact-section"
-    id="contact"
-  >
+  <section class="contact-section" id="contact">
 
     <div class="wrap">
 
@@ -3589,7 +2700,6 @@
 
       </div>
 
-
       <h2>
         Let’s connect.
       </h2>
@@ -3600,9 +2710,7 @@
         visit the portfolio repository and hosted dashboard.
       </p>
 
-
       <div class="contact-links">
-
 
         <a
           class="contact-link"
@@ -3610,7 +2718,6 @@
           target="_blank"
           rel="noopener"
         >
-
           <b>
             Live Dashboard ↗
           </b>
@@ -3619,9 +2726,7 @@
             Interactive dashboard hosted
             with GitHub Pages
           </span>
-
         </a>
-
 
         <a
           class="contact-link"
@@ -3629,7 +2734,6 @@
           target="_blank"
           rel="noopener"
         >
-
           <b>
             GitHub Repository ↗
           </b>
@@ -3637,9 +2741,7 @@
           <span>
             Portfolio files and project assets
           </span>
-
         </a>
-
 
         <a
           class="contact-link"
@@ -3647,13 +2749,10 @@
           target="_blank"
           rel="noopener"
         >
-
           <b>
             LinkedIn ↗
           </b>
-
         </a>
-
 
         <a
           class="contact-link"
@@ -3661,7 +2760,6 @@
           target="_blank"
           rel="noopener"
         >
-
           <b>
             WhatsApp ↗
           </b>
@@ -3669,11 +2767,9 @@
           <span>
             +966 50 530 6149
           </span>
-
         </a>
 
       </div>
-
 
       <div class="footer-note">
 
@@ -3688,6 +2784,7 @@
         </a>
 
         · Riyadh, Saudi Arabia ·
+
         All portfolio samples use synthetic,
         anonymized, or public data.
 
