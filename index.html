@@ -20,6 +20,11 @@
     rel="stylesheet"
   >
 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
   <style>
     :root{
       --navy:#17365D;
@@ -577,6 +582,10 @@
       color:var(--navy);
 
       font-weight:700;
+
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
     }
 
     .mini-flow i{
@@ -585,6 +594,22 @@
       color:var(--bronze);
 
       font-weight:800;
+    }
+
+    .mini-ico{
+      width:18px;
+      height:18px;
+
+      display:inline-grid;
+      place-items:center;
+
+      border-radius:50%;
+
+      background:#F4ECE3;
+
+      color:var(--bronze);
+
+      font-size:10px;
     }
 
     .tool-grid{
@@ -608,6 +633,53 @@
       padding:15px;
     }
 
+    .tool-icon{
+      width:42px;
+      height:42px;
+
+      border-radius:50%;
+
+      display:grid;
+      place-items:center;
+
+      margin-bottom:10px;
+
+      font-size:20px;
+
+      background:#F4ECE3;
+      color:var(--bronze);
+    }
+
+    .tool-icon.python{
+      background:#E8F1FA;
+      color:#2F78B7;
+    }
+
+    .tool-icon.excel{
+      background:#E8F3EC;
+      color:#217346;
+    }
+
+    .tool-icon.html{
+      background:#FCEBE7;
+      color:#E44D26;
+    }
+
+    .tool-icon.analysis{
+      background:#EAF0FA;
+      color:#2F5FA8;
+    }
+
+    .tool-icon.powerbi{
+      background:#FFF4D6;
+      color:#D9A300;
+    }
+
+    .tool-icon.pmo{
+      background:#EFEAFA;
+      color:#5A43A5;
+    }
+
     .tool b{
       display:block;
 
@@ -624,6 +696,207 @@
       color:var(--muted);
 
       line-height:1.4;
+    }
+
+    .value-grid{
+      display:grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap:12px;
+
+      margin-top:18px;
+    }
+
+    .value-card{
+      background:#fff;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius:16px;
+
+      padding:17px;
+    }
+
+    .value-card .icon{
+      width:42px;
+      height:42px;
+
+      border-radius:50%;
+
+      background:#F4ECE3;
+
+      color:var(--bronze);
+
+      display:grid;
+      place-items:center;
+
+      font-size:18px;
+
+      margin-bottom:10px;
+    }
+
+    .value-card .label{
+      color:var(--bronze);
+
+      font-size:9px;
+
+      font-weight:800;
+
+      text-transform:uppercase;
+
+      letter-spacing:.12em;
+    }
+
+    .value-card h4{
+      color:var(--navy);
+
+      font-size:17px;
+
+      margin-top:4px;
+    }
+
+    .value-card p{
+      font-size:11px;
+
+      margin-top:6px;
+    }
+
+    .value-card .micro{
+      margin-top:12px;
+
+      padding-top:10px;
+
+      border-top:
+        1px solid
+        var(--line);
+
+      font-size:9px;
+
+      color:var(--muted);
+
+      font-weight:700;
+    }
+
+    /* =========================
+       POWER BI
+    ========================= */
+
+    .powerbi-grid{
+      display:grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap:16px;
+
+      margin-top:24px;
+    }
+
+    .powerbi-card{
+      background:var(--paper);
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius:18px;
+
+      padding:14px;
+
+      box-shadow:
+        var(--shadow);
+
+      display:flex;
+      flex-direction:column;
+
+      gap:12px;
+    }
+
+    .powerbi-card img{
+      width:100%;
+
+      aspect-ratio:16/10;
+
+      object-fit:contain;
+
+      background:#fff;
+
+      border-radius:13px;
+
+      border:
+        1px solid
+        #eee8df;
+    }
+
+    .powerbi-card h4{
+      color:var(--navy);
+
+      font-size:16px;
+    }
+
+    .powerbi-card p{
+      font-size:11px;
+
+      line-height:1.55;
+    }
+
+    .powerbi-card .question{
+      background:#fff;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius:12px;
+
+      padding:10px 11px;
+
+      font-size:10px;
+
+      color:var(--ink);
+
+      line-height:1.5;
+    }
+
+    .powerbi-card .question b{
+      color:var(--bronze);
+    }
+
+    .powerbi-skills{
+      display:flex;
+
+      flex-wrap:wrap;
+
+      gap:6px;
+
+      margin-top:auto;
+    }
+
+    .powerbi-skills span{
+      padding:
+        5px 8px;
+
+      border-radius:999px;
+
+      background:var(--soft);
+
+      color:var(--navy);
+
+      font-size:9px;
+
+      font-weight:700;
+    }
+
+    .powerbi-note{
+      margin-top:18px;
+
+      font-size:10px;
+
+      color:var(--muted);
     }
 
     /* =========================
@@ -703,7 +976,7 @@
     }
 
     /* =========================
-       PROJECT 01
+       DASHBOARD
     ========================= */
 
     .dashboard-box{
@@ -819,6 +1092,7 @@
 
     .excel-shot img{
       width:100%;
+
       height:100%;
 
       max-height:520px;
@@ -1088,6 +1362,67 @@
         );
     }
 
+    .impact-mini-grid{
+      display:grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap:10px;
+
+      margin-top:16px;
+    }
+
+    .impact-mini{
+      border:
+        1px solid
+        var(--line);
+
+      background:var(--paper);
+
+      border-radius:13px;
+
+      padding:13px;
+    }
+
+    .impact-mini b{
+      display:block;
+
+      color:var(--navy);
+
+      font-size:11px;
+
+      margin-bottom:4px;
+    }
+
+    .impact-mini span{
+      font-size:9.5px;
+
+      color:var(--muted);
+
+      line-height:1.4;
+    }
+
+    .health-callout{
+      margin-top:14px;
+
+      padding:14px;
+
+      border:
+        1px solid
+        #BFD7D0;
+
+      background:#EEF6F3;
+
+      border-radius:13px;
+
+      color:var(--sage);
+
+      font-size:12px;
+
+      font-weight:800;
+    }
+
     .insight-list{
       display:grid;
 
@@ -1341,6 +1676,11 @@
       font-size:10px;
     }
 
+    .footer-note a{
+      color:#fff;
+      font-weight:700;
+    }
+
     /* =========================
        TABLET
     ========================= */
@@ -1399,6 +1739,14 @@
           repeat(2,1fr);
       }
 
+      .value-grid{
+        grid-template-columns:1fr;
+      }
+
+      .powerbi-grid{
+        grid-template-columns:1fr;
+      }
+
       .metrics{
         margin-top:6px;
       }
@@ -1406,6 +1754,10 @@
       .health-flow{
         grid-template-columns:
           repeat(2,1fr);
+      }
+
+      .impact-mini-grid{
+        grid-template-columns:1fr;
       }
 
       .auto-flow{
@@ -1421,7 +1773,6 @@
       .live-frame{
         height:590px;
       }
-
     }
 
     /* =========================
@@ -1520,7 +1871,8 @@
       }
 
       .profile-grid,
-      .tool-grid{
+      .tool-grid,
+      .powerbi-grid{
         grid-template-columns:1fr;
       }
 
@@ -1556,7 +1908,6 @@
         font-size:8.8px;
       }
 
-      /* Hide heavy iframe on phones */
       .live-frame{
         display:none;
       }
@@ -1593,7 +1944,8 @@
 
       .health-flow,
       .health-grid,
-      .health-bottom{
+      .health-bottom,
+      .impact-mini-grid{
         grid-template-columns:1fr;
       }
 
@@ -1670,9 +2022,16 @@
           5px 8px;
       }
 
+      .powerbi-card{
+        padding:16px;
+      }
+
+      .powerbi-card img{
+        aspect-ratio:auto;
+        max-height:440px;
+      }
     }
 
-    /* Very small phones */
     @media(max-width:390px){
 
       .metrics{
@@ -1699,18 +2058,13 @@
       .track{
         width:100%;
       }
-
     }
-
   </style>
 </head>
 
 <body>
 
-  <!-- =========================
-       NAV
-  ========================= -->
-
+  <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
 
@@ -1720,6 +2074,7 @@
 
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#powerbi">Power BI</a>
         <a href="#dashboard">Projects</a>
         <a href="#contact">Contact</a>
       </div>
@@ -1728,14 +2083,8 @@
   </nav>
 
 
-  <!-- =========================
-       HERO
-  ========================= -->
-
-  <header
-    class="hero"
-    id="top"
-  >
+  <!-- HERO -->
+  <header class="hero" id="top">
 
     <div class="hero-copy">
 
@@ -1758,6 +2107,7 @@
       <div class="tags">
         <span class="tag">Python</span>
         <span class="tag">Excel</span>
+        <span class="tag">Power BI</span>
         <span class="tag">Dashboarding</span>
         <span class="tag">Automation</span>
         <span class="tag">Data Visualization</span>
@@ -1767,7 +2117,7 @@
 
         <a
           class="btn"
-          href="#dashboard"
+          href="#powerbi"
         >
           Explore Projects ↓
         </a>
@@ -1802,13 +2152,21 @@
         <div class="hero-mini">
           <b>01</b>
           <span>
+            Power BI dashboards, KPIs,
+            filters, maps, and trend analysis
+          </span>
+        </div>
+
+        <div class="hero-mini">
+          <b>02</b>
+          <span>
             Interactive nationwide dashboard +
             Excel reporting
           </span>
         </div>
 
         <div class="hero-mini">
-          <b>02</b>
+          <b>03</b>
           <span>
             Healthcare sustainability &
             early detection analysis
@@ -1816,18 +2174,10 @@
         </div>
 
         <div class="hero-mini">
-          <b>03</b>
+          <b>04</b>
           <span>
             Automated review reporting &
             PowerPoint generation
-          </span>
-        </div>
-
-        <div class="hero-mini">
-          <b>End-to-end</b>
-          <span>
-            Cleaning, analysis, visualization,
-            and workflow automation
           </span>
         </div>
 
@@ -1838,10 +2188,7 @@
   </header>
 
 
-  <!-- =========================
-       ABOUT
-  ========================= -->
-
+  <!-- ABOUT -->
   <section
     class="section"
     id="about"
@@ -1861,11 +2208,11 @@
 
       </div>
 
+
       <div class="section-head">
 
         <h2>
-          Data analytics with a practical
-          reporting and automation focus.
+          Practical analytics, built around real reporting needs.
         </h2>
 
         <p>
@@ -1883,7 +2230,7 @@
         <div class="card profile-box">
 
           <div class="kicker">
-            How I Work
+            About Me
           </div>
 
           <h3>
@@ -1891,26 +2238,50 @@
           </h3>
 
           <p>
-            I combine technical analysis with practical reporting
-            needs, focusing on clarity, usability, and repeatable
-            workflows.
+            Information Technology graduate with hands-on experience
+            in project data tracking, dashboard development, reporting
+            workflows, and automation. I enjoy structuring messy
+            operational data, designing clear management views,
+            and turning repetitive reporting steps into reusable
+            Python workflows.
           </p>
+
 
           <div class="mini-flow">
 
-            <span>Raw Data</span>
+            <span>
+              <span class="mini-ico">
+                <i class="fa-solid fa-database"></i>
+              </span>
+              Clean & Structure
+            </span>
+
             <i>→</i>
 
-            <span>Clean & Validate</span>
+            <span>
+              <span class="mini-ico">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              Analyze
+            </span>
+
             <i>→</i>
 
-            <span>Analyze</span>
+            <span>
+              <span class="mini-ico">
+                <i class="fa-solid fa-chart-column"></i>
+              </span>
+              Visualize
+            </span>
+
             <i>→</i>
 
-            <span>Visualize</span>
-            <i>→</i>
-
-            <span>Automate</span>
+            <span>
+              <span class="mini-ico">
+                <i class="fa-solid fa-gear"></i>
+              </span>
+              Automate
+            </span>
 
           </div>
 
@@ -1920,45 +2291,177 @@
         <div class="tool-grid">
 
           <div class="tool">
+
+            <div class="tool-icon python">
+              <i class="fa-brands fa-python"></i>
+            </div>
+
             <b>Python</b>
+
             <span>
-              Pandas · OpenPyXL · automation
+              Pandas · OpenPyXL · python-pptx · automation logic
             </span>
+
           </div>
 
+
           <div class="tool">
+
+            <div class="tool-icon excel">
+              <i class="fa-solid fa-file-excel"></i>
+            </div>
+
             <b>Excel</b>
+
             <span>
-              Dashboards · validation · reporting
+              Dashboards · validation · timelines · regional reporting
             </span>
+
           </div>
 
+
           <div class="tool">
+
+            <div class="tool-icon html">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
             <b>HTML / JS</b>
+
             <span>
-              Interactive dashboard development
+              Interactive dashboards and portfolio experiences
             </span>
+
           </div>
 
+
           <div class="tool">
+
+            <div class="tool-icon analysis">
+              <i class="fa-solid fa-database"></i>
+            </div>
+
             <b>Data Analysis</b>
+
             <span>
-              Cleaning · trends · KPI logic
+              Cleaning · trends · KPI logic · scenario analysis
             </span>
+
           </div>
 
+
           <div class="tool">
+
+            <div class="tool-icon powerbi">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+
             <b>Power BI</b>
+
             <span>
-              Visual analysis & reporting
+              Visual analysis and reporting
             </span>
+
           </div>
 
+
           <div class="tool">
+
+            <div class="tool-icon pmo">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+
             <b>PMO Analytics</b>
+
             <span>
-              Tracking · progress · governance
+              Tracking · progress · governance · executive reporting
             </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="value-grid">
+
+        <div class="value-card">
+
+          <div class="icon">
+            <i class="fa-solid fa-chart-column"></i>
+          </div>
+
+          <div class="label">
+            Reporting
+          </div>
+
+          <h4>
+            Clear, reliable reporting
+          </h4>
+
+          <p>
+            Design structured reports and dashboards
+            that turn complex data into clear,
+            actionable insights for different stakeholders.
+          </p>
+
+          <div class="micro">
+            CLEAN DATA → CLEAR REPORTS → BETTER VISIBILITY
+          </div>
+
+        </div>
+
+
+        <div class="value-card">
+
+          <div class="icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+
+          <div class="label">
+            Decision Support
+          </div>
+
+          <h4>
+            Insight for better decisions
+          </h4>
+
+          <p>
+            Provide data-driven analysis to support
+            planning, performance monitoring,
+            and strategic decision-making.
+          </p>
+
+          <div class="micro">
+            DATA → INSIGHTS → ACTION
+          </div>
+
+        </div>
+
+
+        <div class="value-card">
+
+          <div class="icon">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+
+          <div class="label">
+            Automation / Workflow
+          </div>
+
+          <h4>
+            Efficient, repeatable outputs
+          </h4>
+
+          <p>
+            Automate repetitive reporting tasks
+            to save time, reduce manual work,
+            and improve consistency.
+          </p>
+
+          <div class="micro">
+            AUTOMATE → SAVE TIME → SCALE IMPACT
           </div>
 
         </div>
@@ -1970,10 +2473,191 @@
   </section>
 
 
-  <!-- =========================
-       PROJECT 01
-  ========================= -->
+  <!-- PROJECT 01 · POWER BI -->
+  <section
+    class="project"
+    id="powerbi"
+  >
 
+    <div class="wrap">
+
+      <div class="section-topline">
+
+        <span class="section-brand">
+          PROJECT 01 · BUSINESS INTELLIGENCE
+        </span>
+
+        <span class="section-no">
+          01
+        </span>
+
+      </div>
+
+
+      <div class="section-head">
+
+        <h2>
+          From raw data to interactive decision views.
+        </h2>
+
+        <p>
+          Selected Power BI dashboards demonstrating filtering,
+          KPI design, geographic analysis, trend monitoring,
+          and comparative reporting across different business contexts.
+        </p>
+
+      </div>
+
+
+      <div class="powerbi-grid">
+
+
+        <article class="powerbi-card">
+
+          <img
+            src="assets/powerbi_establishments.jpg"
+            alt="Saudi Establishments 2023 Power BI dashboard"
+          >
+
+          <div>
+
+            <div class="kicker">
+              Regional & Quarterly Analysis
+            </div>
+
+            <h4>
+              Saudi Establishments 2023
+            </h4>
+
+          </div>
+
+          <p>
+            Interactive analysis of establishments by region,
+            economic activity, business size, and quarter.
+          </p>
+
+          <div class="question">
+
+            <b>Business question:</b>
+
+            How are establishments distributed geographically,
+            and how does activity change across reporting periods?
+
+          </div>
+
+          <div class="powerbi-skills">
+            <span>Power BI</span>
+            <span>Slicers</span>
+            <span>KPI Cards</span>
+            <span>Regional Analysis</span>
+          </div>
+
+        </article>
+
+
+        <article class="powerbi-card">
+
+          <img
+            src="assets/powerbi_realestate.jpg"
+            alt="Saudi Real Estate Analysis Power BI dashboard"
+          >
+
+          <div>
+
+            <div class="kicker">
+              Geographic Analysis
+            </div>
+
+            <h4>
+              Saudi Real Estate Analysis
+            </h4>
+
+          </div>
+
+          <p>
+            Property analysis combining listing counts,
+            average prices, city comparisons,
+            district-level views, and map-based exploration.
+          </p>
+
+          <div class="question">
+
+            <b>Business question:</b>
+
+            Where are property listings concentrated,
+            and how do average prices vary across cities and districts?
+
+          </div>
+
+          <div class="powerbi-skills">
+            <span>Maps</span>
+            <span>Filters</span>
+            <span>KPI Cards</span>
+            <span>Comparative Analysis</span>
+          </div>
+
+        </article>
+
+
+        <article class="powerbi-card">
+
+          <img
+            src="assets/powerbi_energy.jpg"
+            alt="Renewable Energy Projects Power BI dashboard"
+          >
+
+          <div>
+
+            <div class="kicker">
+              Project Performance
+            </div>
+
+            <h4>
+              Renewable Energy Projects
+            </h4>
+
+          </div>
+
+          <p>
+            Practice dashboard exploring capacity growth,
+            energy-source mix, progress indicators,
+            housing impact, and investment by project.
+          </p>
+
+          <div class="question">
+
+            <b>Business question:</b>
+
+            How do project capacity, energy mix,
+            progress indicators, and investment compare
+            across renewable projects?
+
+          </div>
+
+          <div class="powerbi-skills">
+            <span>Trend Analysis</span>
+            <span>KPI Cards</span>
+            <span>Project Comparison</span>
+            <span>Filters</span>
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <p class="powerbi-note">
+        Practice and portfolio dashboards created to demonstrate
+        Power BI reporting and visualization capabilities.
+        No organizational affiliation is implied.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECT 02 · INTERACTIVE REPORTING -->
   <section
     class="project"
     id="dashboard"
@@ -1984,11 +2668,11 @@
       <div class="section-topline">
 
         <span class="section-brand">
-          PROJECT 01 · FLAGSHIP
+          PROJECT 02 · INTERACTIVE REPORTING
         </span>
 
         <span class="section-no">
-          01
+          02
         </span>
 
       </div>
@@ -2089,6 +2773,7 @@
 
           </div>
 
+
           <a
             class="btn"
             href="https://razanmtw17.github.io/razan-data-portfolio/dashboard/index.html"
@@ -2101,8 +2786,6 @@
         </div>
 
 
-        <!-- Desktop iframe -->
-
         <iframe
           class="live-frame"
           src="dashboard/index.html"
@@ -2110,8 +2793,6 @@
           loading="lazy"
         ></iframe>
 
-
-        <!-- Mobile preview -->
 
         <div class="mobile-dashboard">
 
@@ -2155,7 +2836,7 @@
           <div class="card">
 
             <div class="kicker">
-              Excel Reporting Version
+              Project 02 · Excel Reporting
             </div>
 
             <h4>
@@ -2170,6 +2851,7 @@
             </p>
 
           </div>
+
 
           <a
             class="btn secondary"
@@ -2188,10 +2870,7 @@
   </section>
 
 
-  <!-- =========================
-       PROJECT 02
-  ========================= -->
-
+  <!-- PROJECT 03 · HEALTHCARE -->
   <section
     class="project"
     id="healthcare"
@@ -2202,11 +2881,11 @@
       <div class="section-topline">
 
         <span class="section-brand">
-          PROJECT 02 · HEALTHCARE ANALYTICS
+          PROJECT 03 · HEALTHCARE ANALYTICS
         </span>
 
         <span class="section-no">
-          02
+          03
         </span>
 
       </div>
@@ -2314,6 +2993,7 @@
           </span>
         </div>
 
+
         <div class="hstep">
           <b>
             02 · Earlier Detection
@@ -2324,6 +3004,7 @@
             before costly complications develop.
           </span>
         </div>
+
 
         <div class="hstep">
           <b>
@@ -2336,6 +3017,7 @@
             hospital departments.
           </span>
         </div>
+
 
         <div class="hstep">
           <b>
@@ -2371,6 +3053,7 @@
             reducing diabetes-related complications.
           </p>
 
+
           <div class="cost-bars">
 
             <div class="cost">
@@ -2386,6 +3069,7 @@
               </span>
 
             </div>
+
 
             <div class="cost">
 
@@ -2442,7 +3126,7 @@
         <div class="hcard">
 
           <div class="kicker">
-            Where Savings Could Materialize
+            Project 03 · Downstream Impact
           </div>
 
           <h4>
@@ -2455,6 +3139,7 @@
             complications that later require treatment across
             several clinical services.
           </p>
+
 
           <div class="dept">
 
@@ -2471,6 +3156,7 @@
               </div>
             </div>
 
+
             <div class="drow">
               <span>
                 Nephrology
@@ -2484,6 +3170,7 @@
               </div>
             </div>
 
+
             <div class="drow">
               <span>
                 Ophthalmology
@@ -2496,6 +3183,7 @@
                 ></div>
               </div>
             </div>
+
 
             <div class="drow">
               <span>
@@ -2512,6 +3200,7 @@
 
           </div>
 
+
           <p
             style="
               font-size:9px;
@@ -2521,6 +3210,51 @@
             Bar lengths are illustrative storytelling only;
             no department-specific percentages are claimed.
           </p>
+
+
+          <div class="impact-mini-grid">
+
+            <div class="impact-mini">
+              <b>
+                Lower acute care utilization
+              </b>
+
+              <span>
+                Fewer complications can reduce inpatient admissions
+                and high-cost procedures.
+              </span>
+            </div>
+
+
+            <div class="impact-mini">
+              <b>
+                System-wide cost benefits
+              </b>
+
+              <span>
+                Prevention creates value across multiple departments,
+                not just one service line.
+              </span>
+            </div>
+
+
+            <div class="impact-mini">
+              <b>
+                Improved patient outcomes
+              </b>
+
+              <span>
+                Slower disease progression can reduce complications
+                and support better quality of care.
+              </span>
+            </div>
+
+          </div>
+
+
+          <div class="health-callout">
+            Prevention → fewer complications → lower downstream cost
+          </div>
 
         </div>
 
@@ -2534,6 +3268,7 @@
           <h4>
             How the analysis was built
           </h4>
+
 
           <div class="insight-list">
 
@@ -2550,6 +3285,7 @@
 
             </div>
 
+
             <div class="insight">
 
               <b>
@@ -2563,6 +3299,7 @@
               </span>
 
             </div>
+
 
             <div class="insight">
 
@@ -2590,10 +3327,7 @@
   </section>
 
 
-  <!-- =========================
-       PROJECT 03
-  ========================= -->
-
+  <!-- PROJECT 04 · AUTOMATION -->
   <section
     class="project"
     id="automation"
@@ -2604,11 +3338,11 @@
       <div class="section-topline">
 
         <span class="section-brand">
-          PROJECT 03 · AUTOMATION
+          PROJECT 04 · AUTOMATION
         </span>
 
         <span class="section-no">
-          03
+          04
         </span>
 
       </div>
@@ -2635,6 +3369,7 @@
             based on text length, and generates formatted PowerPoint
             reports from a predefined template.
           </p>
+
 
           <div class="tags">
 
@@ -2676,6 +3411,7 @@
             </span>
           </div>
 
+
           <div class="metric">
             <strong>
               Auto
@@ -2687,6 +3423,7 @@
             </span>
           </div>
 
+
           <div class="metric">
             <strong>
               Clean
@@ -2697,6 +3434,7 @@
               automatically
             </span>
           </div>
+
 
           <div class="metric">
             <strong>
@@ -2727,6 +3465,7 @@
           </span>
         </div>
 
+
         <div class="astep">
           <b>
             02 · Clean & Normalize
@@ -2737,6 +3476,7 @@
             standardized before processing.
           </span>
         </div>
+
 
         <div class="astep">
           <b>
@@ -2749,6 +3489,7 @@
           </span>
         </div>
 
+
         <div class="astep">
           <b>
             04 · Layout Logic
@@ -2759,6 +3500,7 @@
             distribution across slides.
           </span>
         </div>
+
 
         <div class="astep">
           <b>
@@ -2821,10 +3563,7 @@
   </section>
 
 
-  <!-- =========================
-       CONTACT
-  ========================= -->
-
+  <!-- CONTACT -->
   <section
     class="contact-section"
     id="contact"
@@ -2850,6 +3589,7 @@
 
       </div>
 
+
       <h2>
         Let’s connect.
       </h2>
@@ -2862,6 +3602,7 @@
 
 
       <div class="contact-links">
+
 
         <a
           class="contact-link"
@@ -2911,10 +3652,6 @@
             LinkedIn ↗
           </b>
 
-          <span>
-            linkedin.com/in/razan-altowairqi
-          </span>
-
         </a>
 
 
@@ -2939,9 +3676,21 @@
 
 
       <div class="footer-note">
-        razan.m.tw@gmail.com · Riyadh, Saudi Arabia ·
-        All portfolio samples use synthetic, anonymized,
-        or public data.
+
+        <a href="mailto:razan.m.tw@gmail.com">
+          razan.m.tw@gmail.com
+        </a>
+
+        ·
+
+        <a href="tel:+966505306149">
+          +966 50 530 6149
+        </a>
+
+        · Riyadh, Saudi Arabia ·
+        All portfolio samples use synthetic,
+        anonymized, or public data.
+
       </div>
 
     </div>
