@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
 
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, viewport-fit=cover"
-  />
+  >
 
-  <meta
-    name="theme-color"
-    content="#17365D"
-  />
+  <meta name="theme-color" content="#17365D">
 
   <title>Razan Altowairqi | Data Analytics Portfolio</title>
 
+  <!-- =========================
+       SEO
+  ========================= -->
+
   <meta
     name="description"
-    content="Data analytics portfolio by Razan Altowairqi featuring Power BI dashboards, interactive reporting, Excel analytics, healthcare analysis, and Python automation."
-  />
+    content="Turning data into clear, practical insights through dashboards, analytics, and automation."
+  >
 
   <meta
     name="author"
     content="Razan Altowairqi"
-  />
+  >
 
   <!-- =========================
        OPEN GRAPH
@@ -32,86 +33,86 @@
   <meta
     property="og:type"
     content="website"
-  />
+  >
 
   <meta
     property="og:title"
     content="Razan Altowairqi | Data Analytics Portfolio"
-  />
+  >
 
   <meta
     property="og:description"
-    content="Power BI, interactive dashboards, Excel reporting, healthcare analytics, and Python automation projects."
-  />
+    content="Turning data into clear, practical insights through dashboards, analytics, and automation."
+  >
 
   <meta
     property="og:url"
     content="https://razanmtw17.github.io/razan-data-portfolio/"
-  />
+  >
 
   <meta
     property="og:image"
     content="https://razanmtw17.github.io/razan-data-portfolio/assets/7B920DC3-240B-42DC-A21A-EA832D1619A1.png"
-  />
+  >
 
   <meta
     property="og:image:secure_url"
     content="https://razanmtw17.github.io/razan-data-portfolio/assets/7B920DC3-240B-42DC-A21A-EA832D1619A1.png"
-  />
+  >
 
   <meta
     property="og:image:type"
     content="image/png"
-  />
+  >
 
   <meta
     property="og:image:width"
     content="1200"
-  />
+  >
 
   <meta
     property="og:image:height"
     content="630"
-  />
+  >
 
   <meta
     property="og:image:alt"
     content="Razan Altowairqi Data Analytics Portfolio"
-  />
+  >
 
   <meta
     property="og:site_name"
     content="Razan Altowairqi Portfolio"
-  />
+  >
 
   <!-- =========================
-       X / TWITTER CARD
+       X / TWITTER
   ========================= -->
 
   <meta
     name="twitter:card"
     content="summary_large_image"
-  />
+  >
 
   <meta
     name="twitter:title"
     content="Razan Altowairqi | Data Analytics Portfolio"
-  />
+  >
 
   <meta
     name="twitter:description"
-    content="Power BI, interactive dashboards, Excel reporting, healthcare analytics, and Python automation projects."
-  />
+    content="Turning data into clear, practical insights through dashboards, analytics, and automation."
+  >
 
   <meta
     name="twitter:image"
     content="https://razanmtw17.github.io/razan-data-portfolio/assets/7B920DC3-240B-42DC-A21A-EA832D1619A1.png"
-  />
+  >
 
   <meta
     name="twitter:image:alt"
     content="Razan Altowairqi Data Analytics Portfolio"
-  />
+  >
 
   <!-- =========================
        FONTS
@@ -136,6 +137,7 @@
   >
 
   <style>
+
     :root{
       --navy:#17365D;
       --navy2:#244A6B;
@@ -149,7 +151,6 @@
       --line:#DDD6CB;
       --soft:#E8EFED;
       --shadow:0 14px 38px rgba(23,54,93,.09);
-      --radius:22px;
     }
 
     *{
@@ -187,7 +188,9 @@
       -webkit-tap-highlight-color:transparent;
     }
 
-    /* NAV */
+    /* =========================
+       NAV
+    ========================= */
 
     .nav{
       position:sticky;
@@ -231,7 +234,9 @@
       color:var(--navy);
     }
 
-    /* GLOBAL */
+    /* =========================
+       GLOBAL
+    ========================= */
 
     .wrap{
       width:min(1180px,calc(100% - 40px));
@@ -292,11 +297,16 @@
       padding:11px 16px;
       border-radius:10px;
       background:var(--navy);
-      color:white;
+      color:#fff;
       font-size:13px;
       font-weight:800;
       border:1px solid var(--navy);
       transition:.2s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      box-shadow:0 8px 18px rgba(23,54,93,.12);
     }
 
     .btn.secondary{
@@ -305,17 +315,14 @@
     }
 
     .btn.ghost{
-      background:white;
+      background:#fff;
       color:var(--navy);
       border-color:var(--line);
     }
 
-    .btn:hover{
-      transform:translateY(-1px);
-      box-shadow:0 8px 18px rgba(23,54,93,.12);
-    }
-
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero{
       width:min(1180px,calc(100% - 40px));
@@ -376,7 +383,7 @@
       box-shadow:var(--shadow);
     }
 
-    .hero-card:after{
+    .hero-card::after{
       content:"";
       position:absolute;
       width:360px;
@@ -432,10 +439,17 @@
       line-height:1.4;
     }
 
-    /* SECTIONS */
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
 
     .section{
       padding:72px 0;
+    }
+
+    .project{
+      padding:72px 0;
+      border-top:1px solid var(--line);
     }
 
     .section-topline{
@@ -478,12 +492,18 @@
       box-shadow:0 10px 28px rgba(23,54,93,.05);
     }
 
-    /* PROFILE */
+    /* =========================
+       ABOUT
+    ========================= */
 
     .profile-grid{
       display:grid;
       grid-template-columns:.9fr 1.1fr;
       gap:20px;
+    }
+
+    .profile-box{
+      min-width:0;
     }
 
     .profile-box h3{
@@ -497,43 +517,63 @@
       font-size:13px;
     }
 
+    /* FIXED FLOW */
+
     .mini-flow{
-      display:flex;
+      margin-top:22px;
+      display:grid;
+      grid-template-columns:
+        minmax(0,1fr)
+        30px
+        minmax(0,1fr)
+        30px
+        minmax(0,1fr)
+        30px
+        minmax(0,1fr);
+      align-items:center;
       gap:7px;
-      align-items:center;
-      flex-wrap:wrap;
-      margin-top:18px;
+      width:100%;
     }
 
-    .mini-flow span{
-      background:#fff;
+    .flow-step{
+      min-height:44px;
+      padding:8px 10px;
+      border-radius:13px;
       border:1px solid var(--line);
-      padding:7px 10px;
-      border-radius:10px;
-      font-size:10px;
+      background:#fff;
       color:var(--navy);
-      font-weight:700;
-      display:inline-flex;
+      font-size:10px;
+      font-weight:800;
+      display:flex;
       align-items:center;
-      gap:6px;
+      justify-content:center;
+      gap:7px;
+      text-align:center;
+      min-width:0;
+      white-space:nowrap;
     }
 
-    .mini-flow i{
-      font-style:normal;
+    .flow-arrow{
       color:var(--bronze);
-      font-weight:800;
+      font-size:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
     }
 
     .mini-ico{
-      width:18px;
-      height:18px;
-      display:inline-grid;
+      width:24px;
+      height:24px;
+      flex:0 0 24px;
+      display:grid;
       place-items:center;
       border-radius:50%;
       background:#F4ECE3;
       color:var(--bronze);
-      font-size:10px;
+      font-size:11px;
     }
+
+    /* TOOLS */
 
     .tool-grid{
       display:grid;
@@ -546,6 +586,7 @@
       border:1px solid var(--line);
       border-radius:15px;
       padding:15px;
+      min-width:0;
     }
 
     .tool-icon{
@@ -556,8 +597,6 @@
       place-items:center;
       margin-bottom:10px;
       font-size:20px;
-      background:#F4ECE3;
-      color:var(--bronze);
     }
 
     .tool-icon.python{
@@ -657,7 +696,9 @@
       font-weight:700;
     }
 
-    /* POWER BI */
+    /* =========================
+       POWER BI
+    ========================= */
 
     .powerbi-grid{
       display:grid;
@@ -675,6 +716,7 @@
       display:flex;
       flex-direction:column;
       gap:12px;
+      min-width:0;
     }
 
     .powerbi-card img{
@@ -732,18 +774,19 @@
       color:var(--muted);
     }
 
-    /* PROJECTS */
-
-    .project{
-      padding:72px 0;
-      border-top:1px solid var(--line);
-    }
+    /* =========================
+       PROJECT HEAD
+    ========================= */
 
     .project-head{
       display:grid;
       grid-template-columns:1.2fr .8fr;
       gap:22px;
       align-items:start;
+    }
+
+    .project-title{
+      min-width:0;
     }
 
     .project-title p{
@@ -780,7 +823,9 @@
       margin-top:4px;
     }
 
-    /* DASHBOARD */
+    /* =========================
+       DASHBOARD
+    ========================= */
 
     .dashboard-box{
       margin-top:20px;
@@ -811,7 +856,7 @@
       margin-top:4px;
     }
 
-    /* RESPONSIVE IFRAMES */
+    /* RESPONSIVE IFRAME */
 
     .responsive-iframe{
       width:100%;
@@ -831,12 +876,14 @@
     }
 
     .responsive-iframe iframe{
-      border:0;
       display:block;
+      border:0;
       background:#fff;
     }
 
-    /* EXCEL */
+    /* =========================
+       EXCEL
+    ========================= */
 
     .excel-grid{
       display:grid;
@@ -883,7 +930,9 @@
       align-self:flex-start;
     }
 
-    /* HEALTH */
+    /* =========================
+       HEALTH
+    ========================= */
 
     .health-flow{
       display:grid;
@@ -924,6 +973,7 @@
       border:1px solid var(--line);
       border-radius:18px;
       padding:18px;
+      min-width:0;
     }
 
     .hcard h4{
@@ -1029,7 +1079,11 @@
 
     .fill{
       height:100%;
-      background:linear-gradient(90deg,var(--bronze),#D2A57E);
+      background:linear-gradient(
+        90deg,
+        var(--bronze),
+        #D2A57E
+      );
     }
 
     .impact-mini-grid{
@@ -1094,7 +1148,9 @@
       color:var(--muted);
     }
 
-    /* AUTOMATION */
+    /* =========================
+       AUTOMATION
+    ========================= */
 
     .auto-flow{
       display:grid;
@@ -1176,16 +1232,18 @@
       color:#83C4B7;
     }
 
-    /* CONTACT */
+    /* =========================
+       CONTACT
+    ========================= */
 
     .contact-section{
       background:var(--navy);
-      color:white;
+      color:#fff;
       padding:72px 0 44px;
     }
 
     .contact-section h2{
-      color:white;
+      color:#fff;
     }
 
     .contact-section p{
@@ -1211,7 +1269,7 @@
     .contact-link b{
       display:block;
       font-size:12px;
-      color:white;
+      color:#fff;
     }
 
     .contact-link span{
@@ -1220,7 +1278,6 @@
       color:#C8D5E0;
       margin-top:5px;
       line-height:1.4;
-      overflow-wrap:anywhere;
     }
 
     .footer-note{
@@ -1236,7 +1293,9 @@
       font-weight:700;
     }
 
-    /* TABLET */
+    /* =========================
+       TABLET
+    ========================= */
 
     @media(max-width:900px){
 
@@ -1260,12 +1319,9 @@
         min-height:auto;
       }
 
-      .section{
-        padding:52px 0;
-      }
-
+      .section,
       .project{
-        padding:54px 0;
+        padding:52px 0;
       }
 
       .section-head,
@@ -1290,10 +1346,6 @@
         grid-template-columns:1fr;
       }
 
-      .metrics{
-        margin-top:6px;
-      }
-
       .health-flow{
         grid-template-columns:repeat(2,1fr);
       }
@@ -1309,9 +1361,28 @@
       .contact-links{
         grid-template-columns:repeat(2,1fr);
       }
+
+      .mini-flow{
+        grid-template-columns:
+          minmax(0,1fr)
+          24px
+          minmax(0,1fr)
+          24px
+          minmax(0,1fr)
+          24px
+          minmax(0,1fr);
+      }
+
+      .flow-step{
+        font-size:9px;
+        padding:8px 6px;
+      }
+
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media(max-width:640px){
 
@@ -1353,7 +1424,6 @@
       .hero-actions{
         display:grid;
         grid-template-columns:1fr;
-        width:100%;
       }
 
       .hero-actions .btn{
@@ -1396,11 +1466,33 @@
         padding:16px;
       }
 
-      .project-head{
-        gap:18px;
+      /* IMPORTANT FIX */
+
+      .mini-flow{
+        grid-template-columns:
+          minmax(0,1fr)
+          minmax(0,1fr);
+        gap:10px;
+        margin-top:22px;
       }
 
-      .project-title p{
+      .flow-arrow{
+        display:none;
+      }
+
+      .flow-step{
+        width:100%;
+        min-height:52px;
+        padding:9px 8px;
+        justify-content:center;
+        font-size:10px;
+        white-space:normal;
+      }
+
+      .mini-ico{
+        width:28px;
+        height:28px;
+        flex:0 0 28px;
         font-size:12px;
       }
 
@@ -1464,7 +1556,6 @@
 
       .health-chart-img{
         height:auto;
-        max-height:none;
       }
 
       .cost-bars{
@@ -1473,10 +1564,6 @@
 
       .cost{
         width:50%;
-      }
-
-      .bar.high{
-        height:110px;
       }
 
       .drow{
@@ -1497,7 +1584,6 @@
 
       .snippet-shell pre{
         font-size:10px;
-        line-height:1.65;
       }
 
       .contact-links{
@@ -1506,14 +1592,6 @@
 
       .contact-section{
         padding:52px 0 34px;
-      }
-
-      .contact-link{
-        padding:14px;
-      }
-
-      .tags{
-        gap:6px;
       }
 
       .tag{
@@ -1525,10 +1603,6 @@
         padding:16px;
       }
 
-      .powerbi-card img{
-        aspect-ratio:auto;
-        max-height:440px;
-      }
     }
 
     @media(max-width:390px){
@@ -1546,22 +1620,18 @@
         width:100%;
       }
 
-      .bar{
-        width:45px;
-      }
-
       .drow{
         grid-template-columns:1fr;
       }
 
-      .track{
-        width:100%;
-      }
     }
+
   </style>
 </head>
 
 <body>
+
+  <!-- NAV -->
 
   <nav class="nav">
 
@@ -1572,29 +1642,17 @@
       </a>
 
       <div class="nav-links">
-
-        <a href="#about">
-          About
-        </a>
-
-        <a href="#powerbi">
-          Power BI
-        </a>
-
-        <a href="#dashboard">
-          Projects
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
+        <a href="#about">About</a>
+        <a href="#powerbi">Power BI</a>
+        <a href="#dashboard">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
 
     </div>
 
   </nav>
 
+  <!-- HERO -->
 
   <header class="hero" id="top">
 
@@ -1617,39 +1675,17 @@
       </p>
 
       <div class="tags">
-
-        <span class="tag">
-          Python
-        </span>
-
-        <span class="tag">
-          Excel
-        </span>
-
-        <span class="tag">
-          Power BI
-        </span>
-
-        <span class="tag">
-          Dashboarding
-        </span>
-
-        <span class="tag">
-          Automation
-        </span>
-
-        <span class="tag">
-          Data Visualization
-        </span>
-
+        <span class="tag">Python</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Dashboarding</span>
+        <span class="tag">Automation</span>
+        <span class="tag">Data Visualization</span>
       </div>
 
       <div class="hero-actions">
 
-        <a
-          class="btn"
-          href="#powerbi"
-        >
+        <a class="btn" href="#powerbi">
           Explore Projects ↓
         </a>
 
@@ -1665,7 +1701,6 @@
       </div>
 
     </div>
-
 
     <div class="hero-card">
 
@@ -1718,6 +1753,7 @@
 
   </header>
 
+  <!-- ABOUT -->
 
   <section class="section" id="about">
 
@@ -1735,7 +1771,6 @@
 
       </div>
 
-
       <div class="section-head">
 
         <h2>
@@ -1750,7 +1785,6 @@
         </p>
 
       </div>
-
 
       <div class="profile-grid">
 
@@ -1773,46 +1807,53 @@
             Python workflows.
           </p>
 
+          <!-- FIXED FLOW -->
+
           <div class="mini-flow">
 
-            <span>
+            <div class="flow-step">
               <span class="mini-ico">
                 <i class="fa-solid fa-database"></i>
               </span>
               Clean & Structure
-            </span>
+            </div>
 
-            <i>→</i>
+            <div class="flow-arrow">
+              →
+            </div>
 
-            <span>
+            <div class="flow-step">
               <span class="mini-ico">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </span>
               Analyze
-            </span>
+            </div>
 
-            <i>→</i>
+            <div class="flow-arrow">
+              →
+            </div>
 
-            <span>
+            <div class="flow-step">
               <span class="mini-ico">
                 <i class="fa-solid fa-chart-column"></i>
               </span>
               Visualize
-            </span>
+            </div>
 
-            <i>→</i>
+            <div class="flow-arrow">
+              →
+            </div>
 
-            <span>
+            <div class="flow-step">
               <span class="mini-ico">
                 <i class="fa-solid fa-gear"></i>
               </span>
               Automate
-            </span>
+            </div>
 
           </div>
 
         </div>
-
 
         <div class="tool-grid">
 
@@ -1880,7 +1921,6 @@
 
       </div>
 
-
       <div class="value-grid">
 
         <div class="value-card">
@@ -1898,9 +1938,8 @@
           </h4>
 
           <p>
-            Design structured reports and dashboards
-            that turn complex data into clear,
-            actionable insights for different stakeholders.
+            Design structured reports and dashboards that turn complex
+            data into clear, actionable insights for different stakeholders.
           </p>
 
           <div class="micro">
@@ -1908,7 +1947,6 @@
           </div>
 
         </div>
-
 
         <div class="value-card">
 
@@ -1925,9 +1963,8 @@
           </h4>
 
           <p>
-            Provide data-driven analysis to support
-            planning, performance monitoring,
-            and strategic decision-making.
+            Provide data-driven analysis to support planning,
+            performance monitoring, and strategic decision-making.
           </p>
 
           <div class="micro">
@@ -1935,7 +1972,6 @@
           </div>
 
         </div>
-
 
         <div class="value-card">
 
@@ -1952,9 +1988,8 @@
           </h4>
 
           <p>
-            Automate repetitive reporting tasks
-            to save time, reduce manual work,
-            and improve consistency.
+            Automate repetitive reporting tasks to save time,
+            reduce manual work, and improve consistency.
           </p>
 
           <div class="micro">
@@ -1969,8 +2004,8 @@
 
   </section>
 
+  <!-- PROJECT 01 POWER BI -->
 
-  <!-- PROJECT 01 -->
   <section class="project" id="powerbi">
 
     <div class="wrap">
@@ -1987,7 +2022,6 @@
 
       </div>
 
-
       <div class="section-head">
 
         <h2>
@@ -2001,7 +2035,6 @@
         </p>
 
       </div>
-
 
       <div class="powerbi-grid">
 
@@ -2042,7 +2075,6 @@
 
         </article>
 
-
         <article class="powerbi-card">
 
           <img
@@ -2080,7 +2112,6 @@
           </div>
 
         </article>
-
 
         <article class="powerbi-card">
 
@@ -2123,7 +2154,6 @@
 
       </div>
 
-
       <p class="powerbi-note">
         Practice and portfolio dashboards created to demonstrate
         Power BI reporting and visualization capabilities.
@@ -2134,8 +2164,8 @@
 
   </section>
 
-
   <!-- PROJECT 02 -->
+
   <section class="project" id="dashboard">
 
     <div class="wrap">
@@ -2151,7 +2181,6 @@
         </span>
 
       </div>
-
 
       <div class="project-head">
 
@@ -2171,8 +2200,7 @@
             classify, and visualize a large portfolio of project
             outputs across Saudi Arabia. The solution combines
             geographic analysis, timeline tracking, KPI views,
-            regional drill-downs, and an Excel reporting version
-            for spreadsheet-based workflows.
+            regional drill-downs, and an Excel reporting version.
           </p>
 
           <div class="tags">
@@ -2186,7 +2214,6 @@
 
         </div>
 
-
         <div class="metrics">
 
           <div class="metric">
@@ -2196,32 +2223,22 @@
 
           <div class="metric">
             <strong>2</strong>
-            <span>
-              Reporting experiences:
-              Web + Excel
-            </span>
+            <span>Reporting experiences: Web + Excel</span>
           </div>
 
           <div class="metric">
             <strong>KPI</strong>
-            <span>
-              Stage, track, entity &
-              regional views
-            </span>
+            <span>Stage, track, entity & regional views</span>
           </div>
 
           <div class="metric">
             <strong>Live</strong>
-            <span>
-              Interactive dashboard
-              hosted with GitHub Pages
-            </span>
+            <span>Interactive dashboard hosted with GitHub Pages</span>
           </div>
 
         </div>
 
       </div>
-
 
       <!-- LIVE DASHBOARD -->
 
@@ -2246,7 +2263,6 @@
 
           </div>
 
-
           <a
             class="btn"
             href="https://razanmtw17.github.io/razan-data-portfolio/dashboard/index.html"
@@ -2257,7 +2273,6 @@
           </a>
 
         </div>
-
 
         <div
           class="responsive-iframe"
@@ -2279,7 +2294,6 @@
         </div>
 
       </div>
-
 
       <!-- EXCEL -->
 
@@ -2308,7 +2322,6 @@
 
         </div>
 
-
         <div class="excel-side">
 
           <div class="card">
@@ -2330,7 +2343,6 @@
 
           </div>
 
-
           <a
             class="btn secondary"
             href="assets/synthetic_regional_dashboard.xlsx"
@@ -2347,8 +2359,8 @@
 
   </section>
 
-
   <!-- PROJECT 03 -->
+
   <section class="project" id="healthcare">
 
     <div class="wrap">
@@ -2364,7 +2376,6 @@
         </span>
 
       </div>
-
 
       <div class="project-head">
 
@@ -2384,8 +2395,7 @@
             with published scientific literature to examine how
             chronic disease—particularly diabetes and its complications—
             can create long-term financial pressure, and where earlier
-            detection and prevention could reduce downstream treatment
-            costs.
+            detection and prevention could reduce downstream treatment costs.
           </p>
 
           <div class="tags">
@@ -2398,54 +2408,39 @@
 
         </div>
 
-
         <div class="metrics">
 
           <div class="metric">
             <strong>~87%</strong>
-            <span>
-              Illustrative 2030 NCD burden
-              vs. projected MoH budget
-            </span>
+            <span>Illustrative 2030 NCD burden vs. projected MoH budget</span>
           </div>
 
           <div class="metric">
             <strong>~SAR 1.17B</strong>
-            <span>
-              Potential downstream
-              treatment savings scenario
-            </span>
+            <span>Potential downstream treatment savings scenario</span>
           </div>
 
           <div class="metric">
             <strong>~SAR 0.15B</strong>
-            <span>
-              Estimated screening-program
-              cost used in comparison
-            </span>
+            <span>Estimated screening-program cost</span>
           </div>
 
           <div class="metric">
             <strong>Public + Research</strong>
-            <span>
-              Open data combined with
-              published evidence
-            </span>
+            <span>Open data combined with published evidence</span>
           </div>
 
         </div>
 
       </div>
 
-
       <div class="health-flow">
 
         <div class="hstep">
           <b>01 · Chronic Disease Burden</b>
           <span>
-            Long-term disease burden creates
-            direct healthcare costs and wider
-            economic pressure.
+            Long-term disease burden creates direct healthcare costs
+            and wider economic pressure.
           </span>
         </div>
 
@@ -2460,23 +2455,20 @@
         <div class="hstep">
           <b>03 · Fewer Complications</b>
           <span>
-            Preventing or delaying progression
-            can reduce treatment needs across
-            hospital departments.
+            Preventing or delaying progression can reduce treatment
+            needs across hospital departments.
           </span>
         </div>
 
         <div class="hstep">
           <b>04 · Better Sustainability</b>
           <span>
-            Lower downstream costs can help
-            protect long-term healthcare
-            sustainability.
+            Lower downstream costs can help protect
+            long-term healthcare sustainability.
           </span>
         </div>
 
       </div>
-
 
       <div class="health-grid">
 
@@ -2487,16 +2479,13 @@
           </div>
 
           <h4>
-            Cost of Screening vs.
-            Potential Treatment Savings
+            Cost of Screening vs. Potential Treatment Savings
           </h4>
 
           <p>
             The analysis compared an estimated screening-program
-            cost with potential downstream treatment savings from
-            reducing diabetes-related complications.
+            cost with potential downstream treatment savings.
           </p>
-
 
           <div class="cost-bars">
 
@@ -2516,7 +2505,6 @@
 
         </div>
 
-
         <div class="hcard">
 
           <div class="kicker">
@@ -2524,14 +2512,13 @@
           </div>
 
           <h4>
-            Projected MoH Budget vs.
-            NCD Cost Burden
+            Projected MoH Budget vs. NCD Cost Burden
           </h4>
 
           <img
             class="health-chart-img"
             src="assets/health_budget_chart_clear.png"
-            alt="Historical MoH budget, projected budget growth, and NCD cost burden through 2030"
+            alt="Historical MoH budget and NCD cost burden"
           >
 
           <div class="big87">
@@ -2539,14 +2526,13 @@
           </div>
 
           <p>
-            of the projected 2030 MoH budget could be
-            consumed by NCD costs in the analyzed scenario.
+            of the projected 2030 MoH budget could be consumed
+            by NCD costs in the analyzed scenario.
           </p>
 
         </div>
 
       </div>
-
 
       <div class="health-bottom">
 
@@ -2557,16 +2543,13 @@
           </div>
 
           <h4>
-            Potential downstream impact
-            across hospital departments
+            Potential downstream impact across hospital departments
           </h4>
 
           <p>
             Preventing or delaying diabetes progression may reduce
-            complications that later require treatment across
-            several clinical services.
+            complications requiring treatment across several services.
           </p>
-
 
           <div class="dept">
 
@@ -2600,19 +2583,15 @@
 
           </div>
 
-
-          <p style="font-size:9px;margin-top:12px">
+          <p style="font-size:9px;margin-top:12px;">
             Bar lengths are illustrative storytelling only;
             no department-specific percentages are claimed.
           </p>
 
-
           <div class="impact-mini-grid">
 
             <div class="impact-mini">
-              <b>
-                Lower acute care utilization
-              </b>
+              <b>Lower acute care utilization</b>
               <span>
                 Fewer complications can reduce inpatient admissions
                 and high-cost procedures.
@@ -2620,9 +2599,7 @@
             </div>
 
             <div class="impact-mini">
-              <b>
-                System-wide cost benefits
-              </b>
+              <b>System-wide cost benefits</b>
               <span>
                 Prevention creates value across multiple departments,
                 not just one service line.
@@ -2630,9 +2607,7 @@
             </div>
 
             <div class="impact-mini">
-              <b>
-                Improved patient outcomes
-              </b>
+              <b>Improved patient outcomes</b>
               <span>
                 Slower disease progression can reduce complications
                 and support better quality of care.
@@ -2641,13 +2616,11 @@
 
           </div>
 
-
           <div class="health-callout">
             Prevention → fewer complications → lower downstream cost
           </div>
 
         </div>
-
 
         <div class="hcard">
 
@@ -2658,7 +2631,6 @@
           <h4>
             How the analysis was built
           </h4>
-
 
           <div class="insight-list">
 
@@ -2681,9 +2653,8 @@
             <div class="insight">
               <b>Projection</b>
               <span>
-                CAGR calculated from historical budget
-                trends and applied as a continuation-of-trend
-                scenario through 2030—not machine-learning forecasting.
+                CAGR calculated from historical budget trends and applied
+                as a continuation-of-trend scenario through 2030.
               </span>
             </div>
 
@@ -2697,8 +2668,8 @@
 
   </section>
 
-
   <!-- PROJECT 04 -->
+
   <section class="project" id="automation">
 
     <div class="wrap">
@@ -2715,14 +2686,12 @@
 
       </div>
 
-
       <div class="project-head">
 
         <div class="project-title">
 
           <div class="kicker">
-            Automated Review Reporting &
-            PowerPoint Generation
+            Automated Review Reporting & PowerPoint Generation
           </div>
 
           <h2>
@@ -2734,8 +2703,7 @@
             Built a Python workflow that reads structured review
             data from Excel, normalizes status values, consolidates
             reviewer comments, dynamically determines slide capacity
-            based on text length, and generates formatted PowerPoint
-            reports from a predefined template.
+            based on text length, and generates formatted PowerPoint reports.
           </p>
 
           <div class="tags">
@@ -2748,90 +2716,60 @@
 
         </div>
 
-
         <div class="metrics">
 
           <div class="metric">
             <strong>Dynamic</strong>
-            <span>
-              Slide splitting based
-              on content length
-            </span>
+            <span>Slide splitting based on content length</span>
           </div>
 
           <div class="metric">
             <strong>Auto</strong>
-            <span>
-              Formatting copied
-              from template
-            </span>
+            <span>Formatting copied from template</span>
           </div>
 
           <div class="metric">
             <strong>Clean</strong>
-            <span>
-              Reviewer notes consolidated
-              automatically
-            </span>
+            <span>Reviewer notes consolidated automatically</span>
           </div>
 
           <div class="metric">
             <strong>Repeatable</strong>
-            <span>
-              Standardized reporting
-              workflow
-            </span>
+            <span>Standardized reporting workflow</span>
           </div>
 
         </div>
 
       </div>
-
 
       <div class="auto-flow">
 
         <div class="astep">
           <b>01 · Excel Input</b>
-          <span>
-            Output names, statuses,
-            and reviewer columns.
-          </span>
+          <span>Output names, statuses, and reviewer columns.</span>
         </div>
 
         <div class="astep">
           <b>02 · Clean & Normalize</b>
-          <span>
-            Status values and text
-            standardized before processing.
-          </span>
+          <span>Status values and text standardized before processing.</span>
         </div>
 
         <div class="astep">
           <b>03 · Consolidate Notes</b>
-          <span>
-            Meaningful reviewer comments
-            combined per output.
-          </span>
+          <span>Meaningful reviewer comments combined per output.</span>
         </div>
 
         <div class="astep">
           <b>04 · Layout Logic</b>
-          <span>
-            Text length determines record
-            distribution across slides.
-          </span>
+          <span>Text length determines record distribution across slides.</span>
         </div>
 
         <div class="astep">
           <b>05 · PPT Output</b>
-          <span>
-            Formatted presentation files
-            generated automatically.
-          </span>
+          <span>Formatted presentation files generated automatically.</span>
         </div>
 
       </div>
-
 
       <div class="automation-visual">
 
@@ -2852,7 +2790,6 @@
           </code>
 
         </div>
-
 
         <div class="snippet-shell">
 
@@ -2879,8 +2816,8 @@
 
   </section>
 
-
   <!-- CONTACT -->
+
   <section class="contact-section" id="contact">
 
     <div class="wrap">
@@ -2889,20 +2826,19 @@
 
         <span
           class="section-brand"
-          style="color:#fff"
+          style="color:#fff;"
         >
           RAZAN ALTOWAIRQI
         </span>
 
         <span
           class="section-no"
-          style="color:#C8D5E0"
+          style="color:#C8D5E0;"
         >
           CONTACT
         </span>
 
       </div>
-
 
       <h2>
         Let’s connect.
@@ -2914,7 +2850,6 @@
         visit the portfolio repository and hosted dashboard.
       </p>
 
-
       <div class="contact-links">
 
         <a
@@ -2923,13 +2858,8 @@
           target="_blank"
           rel="noopener"
         >
-          <b>
-            Live Dashboard ↗
-          </b>
-          <span>
-            Interactive dashboard hosted
-            with GitHub Pages
-          </span>
+          <b>Live Dashboard ↗</b>
+          <span>Interactive dashboard hosted with GitHub Pages</span>
         </a>
 
         <a
@@ -2938,12 +2868,8 @@
           target="_blank"
           rel="noopener"
         >
-          <b>
-            GitHub Repository ↗
-          </b>
-          <span>
-            Portfolio files and project assets
-          </span>
+          <b>GitHub Repository ↗</b>
+          <span>Portfolio files and project assets</span>
         </a>
 
         <a
@@ -2952,9 +2878,7 @@
           target="_blank"
           rel="noopener"
         >
-          <b>
-            LinkedIn ↗
-          </b>
+          <b>LinkedIn ↗</b>
         </a>
 
         <a
@@ -2963,30 +2887,21 @@
           target="_blank"
           rel="noopener"
         >
-          <b>
-            WhatsApp ↗
-          </b>
-          <span>
-            +966 50 530 6149
-          </span>
+          <b>WhatsApp ↗</b>
+          <span>+966 50 530 6149</span>
         </a>
 
       </div>
 
-
       <div class="footer-note">
 
-        <a
-          href="mailto:razan.m.tw@gmail.com"
-        >
+        <a href="mailto:razan.m.tw@gmail.com">
           razan.m.tw@gmail.com
         </a>
 
         ·
 
-        <a
-          href="tel:+966505306149"
-        >
+        <a href="tel:+966505306149">
           +966 50 530 6149
         </a>
 
@@ -3001,43 +2916,32 @@
 
   </section>
 
-
-  <!-- RESPONSIVE IFRAMES SCRIPT -->
+  <!-- IFRAME AUTO SCALE -->
 
   <script>
 
     function resizeResponsiveIframes(){
 
       const wrappers =
-        document.querySelectorAll(
-          ".responsive-iframe"
-        );
+        document.querySelectorAll(".responsive-iframe");
 
       wrappers.forEach(wrapper => {
 
         const inner =
-          wrapper.querySelector(
-            ".responsive-iframe-inner"
-          );
+          wrapper.querySelector(".responsive-iframe-inner");
 
         const iframe =
-          wrapper.querySelector(
-            "iframe"
-          );
+          wrapper.querySelector("iframe");
 
         if(!inner || !iframe){
           return;
         }
 
         const originalWidth =
-          parseFloat(
-            wrapper.dataset.width
-          ) || 1440;
+          parseFloat(wrapper.dataset.width) || 1440;
 
         const originalHeight =
-          parseFloat(
-            wrapper.dataset.height
-          ) || 900;
+          parseFloat(wrapper.dataset.height) || 900;
 
         const availableWidth =
           wrapper.clientWidth;
@@ -3076,49 +2980,37 @@
 
     }
 
-
     window.addEventListener(
       "load",
       resizeResponsiveIframes
     );
-
 
     window.addEventListener(
       "resize",
       resizeResponsiveIframes
     );
 
-
     window.addEventListener(
       "orientationchange",
       () => {
-
         setTimeout(
           resizeResponsiveIframes,
           250
         );
-
       }
     );
-
 
     if("ResizeObserver" in window){
 
       const observer =
-        new ResizeObserver(() => {
-
-          resizeResponsiveIframes();
-
-        });
+        new ResizeObserver(
+          resizeResponsiveIframes
+        );
 
       document
-        .querySelectorAll(
-          ".responsive-iframe"
-        )
+        .querySelectorAll(".responsive-iframe")
         .forEach(item => {
-
           observer.observe(item);
-
         });
 
     }
