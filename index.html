@@ -12,10 +12,7 @@
 
   <title>Razan Altowairqi | Data Analytics Portfolio</title>
 
-  <!-- =========================
-       SEO
-  ========================= -->
-
+  <!-- SEO -->
   <meta
     name="description"
     content="Turning data into clear, practical insights through dashboards, analytics, and automation."
@@ -26,14 +23,8 @@
     content="Razan Altowairqi"
   >
 
-  <!-- =========================
-       OPEN GRAPH
-  ========================= -->
-
-  <meta
-    property="og:type"
-    content="website"
-  >
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
 
   <meta
     property="og:title"
@@ -65,15 +56,8 @@
     content="image/png"
   >
 
-  <meta
-    property="og:image:width"
-    content="1200"
-  >
-
-  <meta
-    property="og:image:height"
-    content="630"
-  >
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <meta
     property="og:image:alt"
@@ -85,10 +69,7 @@
     content="Razan Altowairqi Portfolio"
   >
 
-  <!-- =========================
-       X / TWITTER
-  ========================= -->
-
+  <!-- X / TWITTER -->
   <meta
     name="twitter:card"
     content="summary_large_image"
@@ -114,10 +95,7 @@
     content="Razan Altowairqi Data Analytics Portfolio"
   >
 
-  <!-- =========================
-       FONTS
-  ========================= -->
-
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link
@@ -188,9 +166,7 @@
       -webkit-tap-highlight-color:transparent;
     }
 
-    /* =========================
-       NAV
-    ========================= */
+    /* NAV */
 
     .nav{
       position:sticky;
@@ -234,9 +210,7 @@
       color:var(--navy);
     }
 
-    /* =========================
-       GLOBAL
-    ========================= */
+    /* GLOBAL */
 
     .wrap{
       width:min(1180px,calc(100% - 40px));
@@ -320,9 +294,7 @@
       border-color:var(--line);
     }
 
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero{
       width:min(1180px,calc(100% - 40px));
@@ -439,16 +411,14 @@
       line-height:1.4;
     }
 
-    /* =========================
-       GENERAL SECTIONS
-    ========================= */
+    /* GENERAL */
 
-    .section{
+    .section,
+    .project{
       padding:72px 0;
     }
 
     .project{
-      padding:72px 0;
       border-top:1px solid var(--line);
     }
 
@@ -492,9 +462,7 @@
       box-shadow:0 10px 28px rgba(23,54,93,.05);
     }
 
-    /* =========================
-       ABOUT
-    ========================= */
+    /* ABOUT */
 
     .profile-grid{
       display:grid;
@@ -516,8 +484,6 @@
     .profile-box p{
       font-size:13px;
     }
-
-    /* FIXED FLOW */
 
     .mini-flow{
       margin-top:22px;
@@ -573,8 +539,6 @@
       font-size:11px;
     }
 
-    /* TOOLS */
-
     .tool-grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
@@ -586,7 +550,6 @@
       border:1px solid var(--line);
       border-radius:15px;
       padding:15px;
-      min-width:0;
     }
 
     .tool-icon{
@@ -696,9 +659,7 @@
       font-weight:700;
     }
 
-    /* =========================
-       POWER BI
-    ========================= */
+    /* POWER BI */
 
     .powerbi-grid{
       display:grid;
@@ -716,7 +677,6 @@
       display:flex;
       flex-direction:column;
       gap:12px;
-      min-width:0;
     }
 
     .powerbi-card img{
@@ -735,7 +695,6 @@
 
     .powerbi-card p{
       font-size:11px;
-      line-height:1.55;
     }
 
     .powerbi-card .question{
@@ -745,7 +704,6 @@
       padding:10px 11px;
       font-size:10px;
       color:var(--ink);
-      line-height:1.5;
     }
 
     .powerbi-card .question b{
@@ -774,19 +732,13 @@
       color:var(--muted);
     }
 
-    /* =========================
-       PROJECT HEAD
-    ========================= */
+    /* PROJECT HEAD */
 
     .project-head{
       display:grid;
       grid-template-columns:1.2fr .8fr;
       gap:22px;
       align-items:start;
-    }
-
-    .project-title{
-      min-width:0;
     }
 
     .project-title p{
@@ -812,20 +764,16 @@
       display:block;
       color:var(--navy);
       font-size:19px;
-      line-height:1.1;
     }
 
     .metric span{
       display:block;
       font-size:9.5px;
       color:var(--muted);
-      line-height:1.35;
       margin-top:4px;
     }
 
-    /* =========================
-       DASHBOARD
-    ========================= */
+    /* DASHBOARD */
 
     .dashboard-box{
       margin-top:20px;
@@ -856,8 +804,6 @@
       margin-top:4px;
     }
 
-    /* RESPONSIVE IFRAME */
-
     .responsive-iframe{
       width:100%;
       position:relative;
@@ -881,9 +827,7 @@
       background:#fff;
     }
 
-    /* =========================
-       EXCEL
-    ========================= */
+    /* EXCEL IMAGE */
 
     .excel-grid{
       display:grid;
@@ -900,14 +844,21 @@
       padding:12px;
       box-shadow:var(--shadow);
       overflow:hidden;
-      min-width:0;
+    }
+
+    .excel-shot img{
+      width:100%;
+      height:100%;
+      max-height:520px;
+      object-fit:contain;
+      border-radius:12px;
+      background:#fff;
     }
 
     .excel-side{
       display:flex;
       flex-direction:column;
       gap:10px;
-      min-width:0;
     }
 
     .excel-side .card{
@@ -930,9 +881,7 @@
       align-self:flex-start;
     }
 
-    /* =========================
-       HEALTH
-    ========================= */
+    /* HEALTH */
 
     .health-flow{
       display:grid;
@@ -958,7 +907,6 @@
     .hstep span{
       font-size:9.5px;
       color:var(--muted);
-      line-height:1.4;
     }
 
     .health-grid{
@@ -973,7 +921,6 @@
       border:1px solid var(--line);
       border-radius:18px;
       padding:18px;
-      min-width:0;
     }
 
     .hcard h4{
@@ -1025,7 +972,6 @@
       display:block;
       font-size:9px;
       color:var(--muted);
-      margin-top:3px;
     }
 
     .health-chart-img{
@@ -1041,7 +987,6 @@
       font-size:38px;
       color:var(--bronze);
       font-weight:800;
-      line-height:1;
       margin-top:6px;
     }
 
@@ -1079,11 +1024,7 @@
 
     .fill{
       height:100%;
-      background:linear-gradient(
-        90deg,
-        var(--bronze),
-        #D2A57E
-      );
+      background:linear-gradient(90deg,var(--bronze),#D2A57E);
     }
 
     .impact-mini-grid{
@@ -1104,13 +1045,11 @@
       display:block;
       color:var(--navy);
       font-size:11px;
-      margin-bottom:4px;
     }
 
     .impact-mini span{
       font-size:9.5px;
       color:var(--muted);
-      line-height:1.4;
     }
 
     .health-callout{
@@ -1148,9 +1087,7 @@
       color:var(--muted);
     }
 
-    /* =========================
-       AUTOMATION
-    ========================= */
+    /* AUTOMATION */
 
     .auto-flow{
       display:grid;
@@ -1176,7 +1113,6 @@
     .astep span{
       font-size:9.5px;
       color:var(--muted);
-      line-height:1.4;
     }
 
     .automation-visual{
@@ -1203,7 +1139,6 @@
       font-size:11px;
       color:var(--navy);
       line-height:1.8;
-      overflow-wrap:anywhere;
     }
 
     .snippet-shell{
@@ -1221,7 +1156,6 @@
       font-size:12px;
       line-height:1.7;
       white-space:pre-wrap;
-      word-break:break-word;
     }
 
     .snippet-shell .kw{
@@ -1232,9 +1166,7 @@
       color:#83C4B7;
     }
 
-    /* =========================
-       CONTACT
-    ========================= */
+    /* CONTACT */
 
     .contact-section{
       background:var(--navy);
@@ -1249,7 +1181,6 @@
     .contact-section p{
       color:#C8D5E0;
       margin-top:10px;
-      max-width:650px;
     }
 
     .contact-links{
@@ -1277,7 +1208,6 @@
       font-size:9.5px;
       color:#C8D5E0;
       margin-top:5px;
-      line-height:1.4;
     }
 
     .footer-note{
@@ -1293,9 +1223,7 @@
       font-weight:700;
     }
 
-    /* =========================
-       TABLET
-    ========================= */
+    /* TABLET */
 
     @media(max-width:900px){
 
@@ -1312,11 +1240,6 @@
       .hero{
         grid-template-columns:1fr;
         padding:46px 0 42px;
-        gap:22px;
-      }
-
-      .hero-card{
-        min-height:auto;
       }
 
       .section,
@@ -1338,10 +1261,7 @@
         grid-template-columns:repeat(2,1fr);
       }
 
-      .value-grid{
-        grid-template-columns:1fr;
-      }
-
+      .value-grid,
       .powerbi-grid{
         grid-template-columns:1fr;
       }
@@ -1362,27 +1282,9 @@
         grid-template-columns:repeat(2,1fr);
       }
 
-      .mini-flow{
-        grid-template-columns:
-          minmax(0,1fr)
-          24px
-          minmax(0,1fr)
-          24px
-          minmax(0,1fr)
-          24px
-          minmax(0,1fr);
-      }
-
-      .flow-step{
-        font-size:9px;
-        padding:8px 6px;
-      }
-
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media(max-width:640px){
 
@@ -1390,18 +1292,6 @@
       .wrap,
       .hero{
         width:calc(100% - 22px);
-      }
-
-      body{
-        font-size:14px;
-      }
-
-      .nav-inner{
-        padding:11px 0;
-      }
-
-      .brand{
-        font-size:11px;
       }
 
       .hero{
@@ -1418,7 +1308,6 @@
 
       .hero-copy .sub{
         font-size:14px;
-        line-height:1.65;
       }
 
       .hero-actions{
@@ -1432,28 +1321,10 @@
 
       .hero-card{
         padding:21px;
-        border-radius:20px;
-      }
-
-      .hero-card .big{
-        font-size:23px;
       }
 
       .mini-grid{
         grid-template-columns:1fr;
-      }
-
-      .section,
-      .project{
-        padding:44px 0;
-      }
-
-      .section-head{
-        gap:12px;
-      }
-
-      .section-head p{
-        font-size:12px;
       }
 
       .profile-grid,
@@ -1462,18 +1333,9 @@
         grid-template-columns:1fr;
       }
 
-      .card{
-        padding:16px;
-      }
-
-      /* IMPORTANT FIX */
-
       .mini-flow{
-        grid-template-columns:
-          minmax(0,1fr)
-          minmax(0,1fr);
+        grid-template-columns:1fr 1fr;
         gap:10px;
-        margin-top:22px;
       }
 
       .flow-arrow{
@@ -1481,40 +1343,12 @@
       }
 
       .flow-step{
-        width:100%;
         min-height:52px;
-        padding:9px 8px;
-        justify-content:center;
-        font-size:10px;
         white-space:normal;
-      }
-
-      .mini-ico{
-        width:28px;
-        height:28px;
-        flex:0 0 28px;
-        font-size:12px;
       }
 
       .metrics{
         grid-template-columns:1fr 1fr;
-        gap:8px;
-      }
-
-      .metric{
-        padding:12px;
-      }
-
-      .metric strong{
-        font-size:16px;
-      }
-
-      .metric span{
-        font-size:8.8px;
-      }
-
-      .dashboard-box{
-        padding:8px;
       }
 
       .dashboard-head{
@@ -1531,7 +1365,13 @@
       }
 
       .excel-shot{
-        padding:6px;
+        padding:8px;
+      }
+
+      .excel-shot img{
+        width:100%;
+        height:auto;
+        max-height:none;
       }
 
       .excel-side .btn{
@@ -1546,61 +1386,13 @@
         grid-template-columns:1fr;
       }
 
-      .hstep{
-        padding:14px;
-      }
-
-      .hcard{
-        padding:15px;
-      }
-
-      .health-chart-img{
-        height:auto;
-      }
-
-      .cost-bars{
-        gap:12px;
-      }
-
-      .cost{
-        width:50%;
-      }
-
-      .drow{
-        grid-template-columns:105px 1fr;
-      }
-
-      .auto-flow{
-        grid-template-columns:1fr;
-      }
-
+      .auto-flow,
       .automation-visual{
         grid-template-columns:1fr;
       }
 
-      .snippet-shell{
-        padding:15px;
-      }
-
-      .snippet-shell pre{
-        font-size:10px;
-      }
-
       .contact-links{
         grid-template-columns:1fr;
-      }
-
-      .contact-section{
-        padding:52px 0 34px;
-      }
-
-      .tag{
-        font-size:9.5px;
-        padding:5px 8px;
-      }
-
-      .powerbi-card{
-        padding:16px;
       }
 
     }
@@ -1609,15 +1401,6 @@
 
       .metrics{
         grid-template-columns:1fr;
-      }
-
-      .cost-bars{
-        flex-direction:column;
-        align-items:stretch;
-      }
-
-      .cost{
-        width:100%;
       }
 
       .drow{
@@ -1631,10 +1414,7 @@
 
 <body>
 
-  <!-- NAV -->
-
   <nav class="nav">
-
     <div class="nav-inner">
 
       <a class="brand" href="#top">
@@ -1649,10 +1429,7 @@
       </div>
 
     </div>
-
   </nav>
-
-  <!-- HERO -->
 
   <header class="hero" id="top">
 
@@ -1693,7 +1470,6 @@
           class="btn ghost"
           href="https://github.com/Razanmtw17/razan-data-portfolio"
           target="_blank"
-          rel="noopener"
         >
           GitHub ↗
         </a>
@@ -1760,15 +1536,8 @@
     <div class="wrap">
 
       <div class="section-topline">
-
-        <span class="section-brand">
-          RAZAN ALTOWAIRQI
-        </span>
-
-        <span class="section-no">
-          01
-        </span>
-
+        <span class="section-brand">RAZAN ALTOWAIRQI</span>
+        <span class="section-no">01</span>
       </div>
 
       <div class="section-head">
@@ -1790,9 +1559,7 @@
 
         <div class="card profile-box">
 
-          <div class="kicker">
-            About Me
-          </div>
+          <div class="kicker">About Me</div>
 
           <h3>
             From raw data to decision-ready outputs.
@@ -1807,8 +1574,6 @@
             Python workflows.
           </p>
 
-          <!-- FIXED FLOW -->
-
           <div class="mini-flow">
 
             <div class="flow-step">
@@ -1818,9 +1583,7 @@
               Clean & Structure
             </div>
 
-            <div class="flow-arrow">
-              →
-            </div>
+            <div class="flow-arrow">→</div>
 
             <div class="flow-step">
               <span class="mini-ico">
@@ -1829,9 +1592,7 @@
               Analyze
             </div>
 
-            <div class="flow-arrow">
-              →
-            </div>
+            <div class="flow-arrow">→</div>
 
             <div class="flow-step">
               <span class="mini-ico">
@@ -1840,9 +1601,7 @@
               Visualize
             </div>
 
-            <div class="flow-arrow">
-              →
-            </div>
+            <div class="flow-arrow">→</div>
 
             <div class="flow-step">
               <span class="mini-ico">
@@ -1921,105 +1680,21 @@
 
       </div>
 
-      <div class="value-grid">
-
-        <div class="value-card">
-
-          <div class="icon">
-            <i class="fa-solid fa-chart-column"></i>
-          </div>
-
-          <div class="label">
-            Reporting
-          </div>
-
-          <h4>
-            Clear, reliable reporting
-          </h4>
-
-          <p>
-            Design structured reports and dashboards that turn complex
-            data into clear, actionable insights for different stakeholders.
-          </p>
-
-          <div class="micro">
-            CLEAN DATA → CLEAR REPORTS → BETTER VISIBILITY
-          </div>
-
-        </div>
-
-        <div class="value-card">
-
-          <div class="icon">
-            <i class="fa-solid fa-chart-line"></i>
-          </div>
-
-          <div class="label">
-            Decision Support
-          </div>
-
-          <h4>
-            Insight for better decisions
-          </h4>
-
-          <p>
-            Provide data-driven analysis to support planning,
-            performance monitoring, and strategic decision-making.
-          </p>
-
-          <div class="micro">
-            DATA → INSIGHTS → ACTION
-          </div>
-
-        </div>
-
-        <div class="value-card">
-
-          <div class="icon">
-            <i class="fa-solid fa-gears"></i>
-          </div>
-
-          <div class="label">
-            Automation / Workflow
-          </div>
-
-          <h4>
-            Efficient, repeatable outputs
-          </h4>
-
-          <p>
-            Automate repetitive reporting tasks to save time,
-            reduce manual work, and improve consistency.
-          </p>
-
-          <div class="micro">
-            AUTOMATE → SAVE TIME → SCALE IMPACT
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
 
   </section>
 
-  <!-- PROJECT 01 POWER BI -->
+  <!-- POWER BI -->
 
   <section class="project" id="powerbi">
 
     <div class="wrap">
 
       <div class="section-topline">
-
         <span class="section-brand">
           PROJECT 01 · BUSINESS INTELLIGENCE
         </span>
-
-        <span class="section-no">
-          01
-        </span>
-
+        <span class="section-no">01</span>
       </div>
 
       <div class="section-head">
@@ -2171,15 +1846,10 @@
     <div class="wrap">
 
       <div class="section-topline">
-
         <span class="section-brand">
           PROJECT 02 · INTERACTIVE REPORTING
         </span>
-
-        <span class="section-no">
-          02
-        </span>
-
+        <span class="section-no">02</span>
       </div>
 
       <div class="project-head">
@@ -2247,7 +1917,6 @@
         <div class="dashboard-head">
 
           <div>
-
             <div class="kicker">
               Interactive Web Experience
             </div>
@@ -2260,14 +1929,12 @@
               Geographic view, stage switching,
               regional drill-downs and KPI analysis.
             </p>
-
           </div>
 
           <a
             class="btn"
             href="https://razanmtw17.github.io/razan-data-portfolio/dashboard/index.html"
             target="_blank"
-            rel="noopener"
           >
             Open Full Screen ↗
           </a>
@@ -2295,30 +1962,16 @@
 
       </div>
 
-      <!-- EXCEL -->
+      <!-- EXCEL IMAGE -->
 
       <div class="excel-grid">
 
         <div class="excel-shot">
 
-          <div
-            class="responsive-iframe"
-            data-width="1440"
-            data-height="900"
+          <img
+            src="assets/excel_dashboard_preview.png.png"
+            alt="Excel dashboard preview"
           >
-
-            <div class="responsive-iframe-inner">
-
-              <iframe
-                src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Frazanmtw17.github.io%2Frazan-data-portfolio%2Fassets%2Fsynthetic_regional_dashboard.xlsx"
-                title="Interactive Excel Dashboard"
-                loading="lazy"
-                allowfullscreen
-              ></iframe>
-
-            </div>
-
-          </div>
 
         </div>
 
@@ -2335,10 +1988,10 @@
             </h4>
 
             <p>
-              Explore the workbook directly in the browser,
-              switch between sheets, review KPI summaries,
-              monthly views, timeline analysis,
-              master data, and regional drill-down sheets.
+              The same synthetic dataset is also available through
+              an Excel-based reporting dashboard with KPI summaries,
+              monthly views, timeline analysis, master data,
+              and regional drill-down sheets.
             </p>
 
           </div>
@@ -2366,15 +2019,10 @@
     <div class="wrap">
 
       <div class="section-topline">
-
         <span class="section-brand">
           PROJECT 03 · HEALTHCARE ANALYTICS
         </span>
-
-        <span class="section-no">
-          03
-        </span>
-
+        <span class="section-no">03</span>
       </div>
 
       <div class="project-head">
@@ -2412,7 +2060,7 @@
 
           <div class="metric">
             <strong>~87%</strong>
-            <span>Illustrative 2030 NCD burden vs. projected MoH budget</span>
+            <span>Illustrative 2030 NCD burden vs projected MoH budget</span>
           </div>
 
           <div class="metric">
@@ -2653,8 +2301,8 @@
             <div class="insight">
               <b>Projection</b>
               <span>
-                CAGR calculated from historical budget trends and applied
-                as a continuation-of-trend scenario through 2030.
+                CAGR calculated from historical budget trends
+                and applied as a continuation-of-trend scenario through 2030.
               </span>
             </div>
 
@@ -2675,15 +2323,10 @@
     <div class="wrap">
 
       <div class="section-topline">
-
         <span class="section-brand">
           PROJECT 04 · AUTOMATION
         </span>
-
-        <span class="section-no">
-          04
-        </span>
-
+        <span class="section-no">04</span>
       </div>
 
       <div class="project-head">
@@ -2824,17 +2467,11 @@
 
       <div class="section-topline">
 
-        <span
-          class="section-brand"
-          style="color:#fff;"
-        >
+        <span class="section-brand" style="color:#fff;">
           RAZAN ALTOWAIRQI
         </span>
 
-        <span
-          class="section-no"
-          style="color:#C8D5E0;"
-        >
+        <span class="section-no" style="color:#C8D5E0;">
           CONTACT
         </span>
 
@@ -2856,7 +2493,6 @@
           class="contact-link"
           href="https://razanmtw17.github.io/razan-data-portfolio/dashboard/index.html"
           target="_blank"
-          rel="noopener"
         >
           <b>Live Dashboard ↗</b>
           <span>Interactive dashboard hosted with GitHub Pages</span>
@@ -2866,7 +2502,6 @@
           class="contact-link"
           href="https://github.com/Razanmtw17/razan-data-portfolio"
           target="_blank"
-          rel="noopener"
         >
           <b>GitHub Repository ↗</b>
           <span>Portfolio files and project assets</span>
@@ -2876,7 +2511,6 @@
           class="contact-link"
           href="https://www.linkedin.com/in/razan-altowairqi/"
           target="_blank"
-          rel="noopener"
         >
           <b>LinkedIn ↗</b>
         </a>
@@ -2885,7 +2519,6 @@
           class="contact-link"
           href="https://wa.me/966505306149"
           target="_blank"
-          rel="noopener"
         >
           <b>WhatsApp ↗</b>
           <span>+966 50 530 6149</span>
@@ -2916,7 +2549,7 @@
 
   </section>
 
-  <!-- IFRAME AUTO SCALE -->
+  <!-- DASHBOARD AUTO SCALE -->
 
   <script>
 
@@ -2972,9 +2605,7 @@
           `scale(${scale})`;
 
         wrapper.style.height =
-          Math.ceil(
-            originalHeight * scale
-          ) + "px";
+          Math.ceil(originalHeight * scale) + "px";
 
       });
 
@@ -3015,6 +2646,7 @@
 
     }
 
+    
   </script>
 
 </body>
